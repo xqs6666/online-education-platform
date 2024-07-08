@@ -6,6 +6,17 @@ spring:
     url: jdbc:mysql://60.204.156.130:3306/online_education_platform?useUnicode=true&characterEncoding=utf-8&serverTimezone
     username: root
     password: genius398
+  redis:
+    host: 60.204.156.130
+    port: 6379
+    password: genius398
+    database: 0
+  mail:
+    host: smtp.qq.com
+    port: 587
+    username: 1984564067@qq.com
+    password: hqnmuhzophoucaab
+    from: 1984564067@qq.com
 #日志
 logging:
   level:
@@ -30,3 +41,5 @@ mybatis-plus:
 jwt:
   secret: xqs666
   expiration: 86400000
+
+

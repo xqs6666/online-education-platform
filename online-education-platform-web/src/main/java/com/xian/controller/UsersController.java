@@ -44,6 +44,13 @@ public class UsersController {
         return Result.success();
     }
 
+    //登出
+    @PostMapping("/logout")
+    @ApiOperation(value = "登出")
+    public Result logout() {
+        iUsersService.logout();
+        return Result.success();
+    }
 
 
 

@@ -30,4 +30,6 @@ public interface IUsersService  {
     String login(LoginVo loginVo);
 
     void register(RegisterVo registerVo);
+
+    void logout();
 }

@@ -1,5 +1,6 @@
 package com.xian.service.impl;
 
+import com.xian.cotext.UserContext;
 import com.xian.model.Users;
 import com.xian.mapper.UsersMapper;
 import com.xian.properties.JwtProperties;
@@ -7,11 +8,15 @@ import com.xian.service.IUsersService;
 import com.xian.util.JwtUtil;
 import com.xian.vo.LoginVo;
 import com.xian.vo.RegisterVo;
+import lombok.val;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+import java.util.concurrent.TimeUnit;
 
 /**
  * <p>
@@ -23,11 +28,17 @@ import java.util.List;
  */
 @Service
 public class UsersServiceImpl  implements IUsersService {
+    private static final String REGISTER_QUEUE = "registerQueue";
 
     @Autowired
     private UsersMapper usersMapper;
     @Autowired
     private JwtProperties jwtProperties;
+
+    @Autowired
+    private RedisTemplate<String,Object> redisTemplate;
+
+    private final static String USER_TOKEN = "user:";
 
     @Override
     public void updateById(Users users) {
@@ -57,6 +68,7 @@ public class UsersServiceImpl  implements IUsersService {
     @Override
     public String login(LoginVo loginVo) {
         // 1. 验证用户名密码
+        // 验证用户名密码
         if (loginVo.getUsername()==null || loginVo.getPassword()==null) {
             throw new RuntimeException("用户名或密码不能为空");
         }
@@ -67,16 +79,26 @@ public class UsersServiceImpl  implements IUsersService {
         if (!users.getPassword().equals(loginVo.getPassword())) {
             throw new RuntimeException("密码错误");
         }
+
         // 2. 生成token
+        // 生成token
         HashMap<String, Object> info = new HashMap<>();
-        info.put("username", users.getUsername());
-        info.put("id", users.getUserId());
-        info.put("userType",users.getUserType());
+        info.put("userId", users.getUserId());
         String token = JwtUtil.generateToken(jwtProperties.getSecret(), jwtProperties.getExpiration(), info);
-        // 3. 返回token
+
+        // 3. redis存储信息 1天过期
+        // redis存储信息 1天过期
+        // 清除之前的信息
+        info.clear();
+        info.put("userId", users.getUserId());
+        info.put("username", users.getUsername());
+        info.put("userType",users.getUserType());
+        redisTemplate.opsForValue().set(USER_TOKEN+users.getUserId(),info,1, TimeUnit.DAYS);
+
         return token;
     }
 
+//用户提交注册表单验证后，系统将注册信息推送到消息队列中，后台服务从队列中取出信息并异步发送欢迎邮件。
     @Override
     public void register(RegisterVo registerVo) {
         if (registerVo.getUsername()==null || registerVo.getPassword() == null||registerVo.getEmail()==null||registerVo.getUserType()==null) {
@@ -96,7 +118,19 @@ public class UsersServiceImpl  implements IUsersService {
         // 3. 保存用户
         Users user = new Users();
         BeanUtils.copyProperties(registerVo, user);
-
         usersMapper.save(user);
+
+        // 4. 发送注册成功信息
+        redisTemplate.opsForList().leftPush(REGISTER_QUEUE, user); // 将用户信息推送到队列中
+    }
+
+    @Override
+    public void logout() {
+        Map<String, Object> user = UserContext.getUser();
+        Integer userId = (Integer) user.get("userId");
+        Boolean aBoolean = redisTemplate.delete(USER_TOKEN + userId);
+        if (!aBoolean) {
+            throw new RuntimeException("退出失败");
+        }
     }
 }

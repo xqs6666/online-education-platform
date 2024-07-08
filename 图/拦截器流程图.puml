@@ -1,0 +1,38 @@
+@startuml
+start
+
+:开始请求;
+
+:获取请求头中的 token;
+if (token 为空) then (yes)
+    :设置响应状态为 SC_UNAUTHORIZED;
+    stop
+else (no)
+    :验证 token;
+    if (claims 为空) then (yes)
+        :设置响应状态为 SC_UNAUTHORIZED;
+        stop
+    else (no)
+        :获取 JWT 用户信息 (userId);
+        :通过userId从Redis获取用户信息;
+        if (userInfo 为空) then (yes)
+            :设置响应状态为 SC_UNAUTHORIZED;
+            stop
+        else (no)
+            :设置用户信息到 ThreadLocal;
+            note right
+                user.put("userId", userId)
+                user.put("username", (String) userInfo.get("username"))
+                user.put("userType", (String) userInfo.get("userType"))
+            end note
+            :返回 true;
+        endif
+    endif
+endif
+
+:处理请求;
+
+:请求处理完成后调用 afterCompletion;
+:清除 ThreadLocal 中的用户信息;
+stop
+@enduml
