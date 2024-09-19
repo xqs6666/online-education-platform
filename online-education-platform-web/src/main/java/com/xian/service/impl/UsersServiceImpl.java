@@ -42,7 +42,18 @@ public class UsersServiceImpl  implements IUsersService {
 
     @Override
     public void updateById(Users users) {
-        usersMapper.updateById(users);
+        Map<String, Object> user = UserContext.getUser();
+        Integer userId = (Integer) user.get("userId");
+
+        if (users.getUserId()!=null){
+            if (users.getUserId()!=userId){
+                throw new RuntimeException("非法操作");
+            }
+        }
+        Users newUser = new Users();
+        BeanUtils.copyProperties(users,newUser);
+        newUser.setUserId(userId);
+        usersMapper.updateById(newUser);
     }
 
     @Override
@@ -51,8 +62,15 @@ public class UsersServiceImpl  implements IUsersService {
     }
 
     @Override
-    public Users getById(Integer id) {
-        return usersMapper.getById(id);
+    public Users getById() {
+        Map<String, Object> userMap = UserContext.getUser();
+        if (userMap==null){
+            throw new RuntimeException("非法操作");
+        }
+        Integer userId = (Integer) userMap.get("userId");
+        Users user = usersMapper.getById(userId);
+
+        return user;
     }
 
     @Override
@@ -98,7 +116,7 @@ public class UsersServiceImpl  implements IUsersService {
         return token;
     }
 
-//用户提交注册表单验证后，系统将注册信息推送到消息队列中，后台服务从队列中取出信息并异步发送欢迎邮件。
+    //用户提交注册表单验证后，系统将注册信息推送到消息队列中，后台服务从队列中取出信息并异步发送欢迎邮件。
     @Override
     public void register(RegisterVo registerVo) {
         if (registerVo.getUsername()==null || registerVo.getPassword() == null||registerVo.getEmail()==null||registerVo.getUserType()==null) {

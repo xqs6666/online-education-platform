@@ -29,7 +29,9 @@ public class JwtInterceptor implements HandlerInterceptor {
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
         // 在请求处理之前调用
-        log.info("JwtInterceptor拦截器开始运行");
+        log.info("JwtInterceptor拦截器运行");
+        String requestURI = request.getRequestURI();
+        log.info("拦截URL:[{}]",requestURI);
         final String token;
         // 获取请求头中的token
         token = request.getHeader("Authorization");

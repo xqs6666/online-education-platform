@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.xian.mapper.ChapterVideosMapper">
+    <insert id="save">
+        insert into chapter_videos(chapter_id,video_url,uploaded_at,video_code) values(#{chapterId},#{videoUrl},now(),#{videoCode})
+    </insert>
 
+    <select id="getChapterVideoByChapterId" resultType="com.xian.model.ChapterVideos">
+        select * from chapter_videos where chapter_id = #{chapterId}
+    </select>
 </mapper>

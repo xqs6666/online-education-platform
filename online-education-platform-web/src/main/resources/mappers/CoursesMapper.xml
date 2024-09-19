@@ -1,5 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.xian.mapper.CoursesMapper">
+<!--    <insert id="save">-->
+<!--        insert into courses(category, created_at, description, image, price, teacher_id, title, updated_at)-->
+<!--        values (#{category}, #{createdAt}, #{description}, #{image},-->
+<!--                #{price}, #{teacherId},-->
+<!--                #{title}, NOW())-->
+<!--    </insert>-->
+    <insert id="save" keyProperty="courseId" useGeneratedKeys="true">
+        INSERT INTO courses
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="categoryId != null">
+                category_id,
+            </if>
+            <if test="description != null and description != ''">
+                description,
+            </if>
+            <if test="image != null and title != ''">
+                image,
+            </if>
+            <if test="price != null">
+                price,
+            </if>
+            <if test="teacherId != null">
+                teacher_id,
+            </if>
+            <if test="title != null and title != ''">
+                title,
+            </if>
+            created_at,
+            updated_at
+        </trim>
+        VALUES
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="categoryId != null">
+                #{categoryId},
+            </if>
+            <if test="description != null and description != ''">
+                #{description},
+            </if>
+            <if test="image != null">
+                #{image},
+            </if>
+            <if test="price != null">
+                #{price},
+            </if>
+            <if test="teacherId != null">
+                #{teacherId},
+            </if>
+            <if test="title != null and title != ''">
+                #{title},
+            </if>
+            Now(),
+            Now()
+        </trim>
+    </insert>
 
+    <update id="updateById">
+
+    </update>
+
+    <delete id="removeById">
+
+    </delete>
+
+    <select id="getById" resultType="com.xian.model.Courses">
+        select * from courses where course_id = #{courseId}
+    </select>
+
+    <select id="list" resultType="com.xian.model.Courses">
+        select * from courses
+    </select>
+    <select id="getByCategoryId" resultType="com.xian.model.Courses">
+        select * from courses where category_id = #{categoryId}
+    </select>
 </mapper>

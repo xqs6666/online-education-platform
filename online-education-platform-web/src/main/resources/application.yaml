@@ -3,11 +3,15 @@ server:
 
 spring:
   datasource:
-    url: jdbc:mysql://60.204.156.130:3306/online_education_platform?useUnicode=true&characterEncoding=utf-8&serverTimezone
+    url: jdbc:mysql://47.98.224.148:3306/online_education_platform?useUnicode=true&characterEncoding=utf-8&serverTimezone
     username: root
     password: genius398
+  servlet:
+    multipart:
+      max-file-size: 20MB
+      max-request-size: 20MB
   redis:
-    host: 60.204.156.130
+    host: 47.98.224.148
     port: 6379
     password: genius398
     database: 0
@@ -17,6 +21,8 @@ spring:
     username: 1984564067@qq.com
     password: hqnmuhzophoucaab
     from: 1984564067@qq.com
+
+
 #日志
 logging:
   level:
@@ -43,3 +49,14 @@ jwt:
   expiration: 86400000
 
 
+# application.yml
+
+sftp:
+  host: 47.98.224.148
+  port: 22
+  user: root
+  password: 15682173858Xx
+  directory: /path/to/videos/
+
+nginx:
+  video-url-prefix: http://47.98.224.148/videos/

@@ -21,7 +21,7 @@ public interface IUsersService  {
 
     List<Users> list();
 
-    Users getById(Integer id);
+    Users getById();
 
     void save(Users users);
 

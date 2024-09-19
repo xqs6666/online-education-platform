@@ -1,626 +1,222 @@
-2024-07-08 16:13:26 INFO  c.x.OnlineEducationPlatformWebApplication - Starting OnlineEducationPlatformWebApplication using Java 1.8.0_391 on LAPTOP-1KP0AUAC with PID 5064 (D:\code\online-education-platform\online-education-platform-web\target\classes started by 19845 in D:\code\online-education-platform)
-2024-07-08 16:13:26 INFO  c.x.OnlineEducationPlatformWebApplication - No active profile set, falling back to 1 default profile: "default"
-2024-07-08 16:13:26 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-2024-07-08 16:13:26 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2024-07-08 16:13:26 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
-2024-07-08 16:13:26 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-2024-07-08 16:13:26 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2024-07-08 16:13:26 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
-2024-07-08 16:13:27 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2024-07-08 16:13:27 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1004 ms
-2024-07-08 16:13:28 INFO  com.xian.config.WebMvcConfiguration - 生成接口文档
-2024-07-08 16:13:28 INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
-2024-07-08 16:13:28 INFO  o.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
-2024-07-08 16:13:28 INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.2 created.
-2024-07-08 16:13:28 INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
-2024-07-08 16:13:28 INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
-  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
-  NOT STARTED.
-  Currently in standby mode.
-  Number of jobs executed: 0
-  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
-  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
-
-2024-07-08 16:13:28 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
-2024-07-08 16:13:28 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.2
-2024-07-08 16:13:28 INFO  org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@4f1afe8f
-2024-07-08 16:13:28 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-2024-07-08 16:13:28 INFO  o.s.s.quartz.SchedulerFactoryBean - Starting Quartz Scheduler now
-2024-07-08 16:13:28 INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED started.
-2024-07-08 16:13:28 INFO  c.x.OnlineEducationPlatformWebApplication - Started OnlineEducationPlatformWebApplication in 2.519 seconds (JVM running for 3.039)
-2024-07-08 16:13:30 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-07-08 16:13:30 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2024-07-08 16:13:30 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-2024-07-08 16:13:30 WARN  o.s.web.servlet.PageNotFound - No mapping for GET /favicon.ico
-2024-07-08 16:13:30 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器开始运行
-2024-07-08 16:13:33 WARN  o.s.web.servlet.PageNotFound - No mapping for GET /favicon.ico
-2024-07-08 16:13:33 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器开始运行
-2024-07-08 16:13:37 INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
-2024-07-08 16:13:37 INFO  o.s.s.quartz.SchedulerFactoryBean - Shutting down Quartz Scheduler
-2024-07-08 16:13:37 INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
-2024-07-08 16:13:37 INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
-2024-07-08 16:13:37 INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
-2024-07-08 16:13:40 INFO  c.x.OnlineEducationPlatformWebApplication - Starting OnlineEducationPlatformWebApplication using Java 1.8.0_391 on LAPTOP-1KP0AUAC with PID 15284 (D:\code\online-education-platform\online-education-platform-web\target\classes started by 19845 in D:\code\online-education-platform)
-2024-07-08 16:13:40 INFO  c.x.OnlineEducationPlatformWebApplication - No active profile set, falling back to 1 default profile: "default"
-2024-07-08 16:13:41 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-2024-07-08 16:13:41 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2024-07-08 16:13:41 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
-2024-07-08 16:13:41 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-2024-07-08 16:13:41 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2024-07-08 16:13:41 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
-2024-07-08 16:13:41 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2024-07-08 16:13:41 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 760 ms
-2024-07-08 16:13:42 INFO  com.xian.config.WebMvcConfiguration - 生成接口文档
-2024-07-08 16:13:42 INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
-2024-07-08 16:13:42 INFO  o.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
-2024-07-08 16:13:42 INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.2 created.
-2024-07-08 16:13:42 INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
-2024-07-08 16:13:42 INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
-  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
-  NOT STARTED.
-  Currently in standby mode.
-  Number of jobs executed: 0
-  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
-  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
-
-2024-07-08 16:13:42 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
-2024-07-08 16:13:42 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.2
-2024-07-08 16:13:42 INFO  org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@17ae13d5
-2024-07-08 16:13:42 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-2024-07-08 16:13:42 INFO  o.s.s.quartz.SchedulerFactoryBean - Starting Quartz Scheduler now
-2024-07-08 16:13:42 INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED started.
-2024-07-08 16:13:42 INFO  c.x.OnlineEducationPlatformWebApplication - Started OnlineEducationPlatformWebApplication in 2.137 seconds (JVM running for 2.897)
-2024-07-08 16:15:04 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-07-08 16:15:04 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2024-07-08 16:15:04 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
-2024-07-08 16:15:04 WARN  o.s.web.servlet.PageNotFound - No mapping for GET /favicon.ico
-2024-07-08 16:15:04 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器开始运行
-2024-07-08 16:15:06 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器开始运行
-2024-07-08 16:16:02 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2024-07-08 16:16:02 INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
-2024-07-08 16:16:02 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2024-07-08 16:16:03 INFO  o.s.s.quartz.SchedulerFactoryBean - Shutting down Quartz Scheduler
-2024-07-08 16:16:03 INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
-2024-07-08 16:16:03 INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
-2024-07-08 16:16:03 INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
-2024-07-08 16:16:03 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2024-07-08 16:16:03 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2024-07-08 16:20:56 INFO  c.x.OnlineEducationPlatformWebApplication - Starting OnlineEducationPlatformWebApplication using Java 1.8.0_391 on LAPTOP-1KP0AUAC with PID 18176 (D:\code\online-education-platform\online-education-platform-web\target\classes started by 19845 in D:\code\online-education-platform)
-2024-07-08 16:20:56 INFO  c.x.OnlineEducationPlatformWebApplication - No active profile set, falling back to 1 default profile: "default"
-2024-07-08 16:20:57 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-2024-07-08 16:20:57 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2024-07-08 16:20:57 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
-2024-07-08 16:20:57 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-2024-07-08 16:20:57 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2024-07-08 16:20:57 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
-2024-07-08 16:20:57 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2024-07-08 16:20:57 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 740 ms
-2024-07-08 16:20:58 INFO  com.xian.config.WebMvcConfiguration - 生成接口文档
-2024-07-08 16:20:58 INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
-2024-07-08 16:20:58 INFO  o.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
-2024-07-08 16:20:58 INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.2 created.
-2024-07-08 16:20:58 INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
-2024-07-08 16:20:58 INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
-  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
-  NOT STARTED.
-  Currently in standby mode.
-  Number of jobs executed: 0
-  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
-  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
-
-2024-07-08 16:20:58 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
-2024-07-08 16:20:58 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.2
-2024-07-08 16:20:58 INFO  org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@19924f15
-2024-07-08 16:20:58 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-2024-07-08 16:20:58 INFO  o.s.s.quartz.SchedulerFactoryBean - Starting Quartz Scheduler now
-2024-07-08 16:20:58 INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED started.
-2024-07-08 16:20:58 INFO  c.x.OnlineEducationPlatformWebApplication - Started OnlineEducationPlatformWebApplication in 2.178 seconds (JVM running for 2.668)
-2024-07-08 16:21:01 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-07-08 16:21:01 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2024-07-08 16:21:01 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-2024-07-08 16:21:01 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器开始运行
-2024-07-08 16:21:36 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2024-07-08 16:21:37 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2024-07-08 16:26:06 INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /60.204.156.130:6379
-2024-07-08 16:26:06 INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 60.204.156.130:6379
-2024-07-08 16:31:07 INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /60.204.156.130:6379
-2024-07-08 16:31:07 INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 60.204.156.130:6379
-2024-07-08 16:34:55 INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
-2024-07-08 16:34:55 INFO  o.s.s.quartz.SchedulerFactoryBean - Shutting down Quartz Scheduler
-2024-07-08 16:34:55 INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
-2024-07-08 16:34:55 INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
-2024-07-08 16:34:55 INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
-2024-07-08 16:34:55 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2024-07-08 16:35:08 INFO  c.x.OnlineEducationPlatformWebApplication - Starting OnlineEducationPlatformWebApplication using Java 1.8.0_391 on LAPTOP-1KP0AUAC with PID 15724 (D:\code\online-education-platform\online-education-platform-web\target\classes started by 19845 in D:\code\online-education-platform)
-2024-07-08 16:35:08 INFO  c.x.OnlineEducationPlatformWebApplication - No active profile set, falling back to 1 default profile: "default"
-2024-07-08 16:35:09 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-2024-07-08 16:35:09 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2024-07-08 16:35:09 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
-2024-07-08 16:35:09 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-2024-07-08 16:35:09 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2024-07-08 16:35:09 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
-2024-07-08 16:35:09 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2024-07-08 16:35:09 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 904 ms
-2024-07-08 16:35:10 INFO  com.xian.config.WebMvcConfiguration - 生成接口文档
-2024-07-08 16:35:10 INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
-2024-07-08 16:35:10 INFO  o.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
-2024-07-08 16:35:10 INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.2 created.
-2024-07-08 16:35:10 INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
-2024-07-08 16:35:10 INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
-  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
-  NOT STARTED.
-  Currently in standby mode.
-  Number of jobs executed: 0
-  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
-  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
-
-2024-07-08 16:35:10 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
-2024-07-08 16:35:10 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.2
-2024-07-08 16:35:10 INFO  org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@32513dea
-2024-07-08 16:35:10 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-2024-07-08 16:35:10 INFO  o.s.s.quartz.SchedulerFactoryBean - Starting Quartz Scheduler now
-2024-07-08 16:35:10 INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED started.
-2024-07-08 16:35:10 INFO  c.x.OnlineEducationPlatformWebApplication - Started OnlineEducationPlatformWebApplication in 2.301 seconds (JVM running for 2.912)
-2024-07-08 16:35:41 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-07-08 16:35:41 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2024-07-08 16:35:41 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-2024-07-08 16:35:41 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器开始运行
-2024-07-08 16:35:42 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2024-07-08 16:35:43 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2024-07-08 16:35:45 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器开始运行
-2024-07-08 16:35:47 WARN  o.s.web.servlet.PageNotFound - No mapping for GET /favicon.ico
-2024-07-08 16:35:47 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器开始运行
-2024-07-08 16:35:49 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器开始运行
-2024-07-08 16:35:53 WARN  o.s.web.servlet.PageNotFound - No mapping for GET /favicon.ico
-2024-07-08 16:35:53 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器开始运行
-2024-07-08 16:35:56 WARN  o.s.web.servlet.PageNotFound - No mapping for GET /favicon.ico
-2024-07-08 16:35:56 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器开始运行
-2024-07-08 16:36:00 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器开始运行
-2024-07-08 16:36:33 WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=47s836ms551µs700ns).
-2024-07-08 16:36:52 WARN  o.s.web.servlet.PageNotFound - No mapping for GET /favicon.ico
-2024-07-08 16:36:52 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器开始运行
-2024-07-08 16:36:54 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器开始运行
-2024-07-08 16:36:57 WARN  o.s.web.servlet.PageNotFound - No mapping for GET /favicon.ico
-2024-07-08 16:36:57 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器开始运行
-2024-07-08 16:37:29 INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
-2024-07-08 16:37:29 INFO  o.s.s.quartz.SchedulerFactoryBean - Shutting down Quartz Scheduler
-2024-07-08 16:37:29 INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
-2024-07-08 16:37:29 INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
-2024-07-08 16:37:29 INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
-2024-07-08 16:37:29 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2024-07-08 16:37:29 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2024-07-08 16:37:31 INFO  c.x.OnlineEducationPlatformWebApplication - Starting OnlineEducationPlatformWebApplication using Java 1.8.0_391 on LAPTOP-1KP0AUAC with PID 11864 (D:\code\online-education-platform\online-education-platform-web\target\classes started by 19845 in D:\code\online-education-platform)
-2024-07-08 16:37:31 INFO  c.x.OnlineEducationPlatformWebApplication - No active profile set, falling back to 1 default profile: "default"
-2024-07-08 16:37:31 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-2024-07-08 16:37:31 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2024-07-08 16:37:31 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
-2024-07-08 16:37:32 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-2024-07-08 16:37:32 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2024-07-08 16:37:32 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
-2024-07-08 16:37:32 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2024-07-08 16:37:32 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 768 ms
-2024-07-08 16:37:32 INFO  com.xian.config.WebMvcConfiguration - 生成接口文档
-2024-07-08 16:37:33 INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
-2024-07-08 16:37:33 INFO  o.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
-2024-07-08 16:37:33 INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.2 created.
-2024-07-08 16:37:33 INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
-2024-07-08 16:37:33 INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
-  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
-  NOT STARTED.
-  Currently in standby mode.
-  Number of jobs executed: 0
-  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
-  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
-
-2024-07-08 16:37:33 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
-2024-07-08 16:37:33 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.2
-2024-07-08 16:37:33 INFO  org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@57b130f6
-2024-07-08 16:37:33 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-2024-07-08 16:37:33 INFO  o.s.s.quartz.SchedulerFactoryBean - Starting Quartz Scheduler now
-2024-07-08 16:37:33 INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED started.
-2024-07-08 16:37:33 INFO  c.x.OnlineEducationPlatformWebApplication - Started OnlineEducationPlatformWebApplication in 2.17 seconds (JVM running for 2.692)
-2024-07-08 16:37:36 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-07-08 16:37:36 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2024-07-08 16:37:36 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-2024-07-08 16:37:36 WARN  o.s.web.servlet.PageNotFound - No mapping for GET /favicon.ico
-2024-07-08 16:38:24 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器开始运行
-2024-07-08 16:38:24 INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
-2024-07-08 16:38:24 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2024-07-08 16:38:24 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2024-07-08 16:38:25 INFO  o.s.s.quartz.SchedulerFactoryBean - Shutting down Quartz Scheduler
-2024-07-08 16:38:25 INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
-2024-07-08 16:38:25 INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
-2024-07-08 16:38:25 INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
-2024-07-08 16:38:25 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2024-07-08 16:38:25 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2024-07-08 16:38:27 INFO  c.x.OnlineEducationPlatformWebApplication - Starting OnlineEducationPlatformWebApplication using Java 1.8.0_391 on LAPTOP-1KP0AUAC with PID 17168 (D:\code\online-education-platform\online-education-platform-web\target\classes started by 19845 in D:\code\online-education-platform)
-2024-07-08 16:38:27 INFO  c.x.OnlineEducationPlatformWebApplication - No active profile set, falling back to 1 default profile: "default"
-2024-07-08 16:38:27 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-2024-07-08 16:38:27 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2024-07-08 16:38:27 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
-2024-07-08 16:38:28 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-2024-07-08 16:38:28 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2024-07-08 16:38:28 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
-2024-07-08 16:38:28 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2024-07-08 16:38:28 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 783 ms
-2024-07-08 16:38:29 INFO  com.xian.config.WebMvcConfiguration - 生成接口文档
-2024-07-08 16:38:29 INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
-2024-07-08 16:38:29 INFO  o.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
-2024-07-08 16:38:29 INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.2 created.
-2024-07-08 16:38:29 INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
-2024-07-08 16:38:29 INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
-  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
-  NOT STARTED.
-  Currently in standby mode.
-  Number of jobs executed: 0
-  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
-  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
-
-2024-07-08 16:38:29 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
-2024-07-08 16:38:29 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.2
-2024-07-08 16:38:29 INFO  org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@145fe8ab
-2024-07-08 16:38:29 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-2024-07-08 16:38:29 INFO  o.s.s.quartz.SchedulerFactoryBean - Starting Quartz Scheduler now
-2024-07-08 16:38:29 INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED started.
-2024-07-08 16:38:29 INFO  c.x.OnlineEducationPlatformWebApplication - Started OnlineEducationPlatformWebApplication in 2.205 seconds (JVM running for 2.74)
-2024-07-08 16:38:31 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-07-08 16:38:31 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2024-07-08 16:38:31 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
-2024-07-08 16:38:32 WARN  o.s.web.servlet.PageNotFound - No mapping for GET /favicon.ico
-2024-07-08 16:38:48 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器开始运行
-2024-07-08 16:38:48 WARN  o.s.web.servlet.PageNotFound - No mapping for GET /favicon.ico
-2024-07-08 16:38:48 WARN  o.s.web.servlet.PageNotFound - No mapping for GET /favicon.ico
-2024-07-08 16:38:48 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器开始运行
-2024-07-08 16:38:48 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器开始运行
-2024-07-08 16:38:48 INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
-2024-07-08 16:38:48 INFO  o.s.s.quartz.SchedulerFactoryBean - Shutting down Quartz Scheduler
-2024-07-08 16:38:48 INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
-2024-07-08 16:38:48 INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
-2024-07-08 16:38:48 INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
-2024-07-08 16:38:51 INFO  c.x.OnlineEducationPlatformWebApplication - Starting OnlineEducationPlatformWebApplication using Java 1.8.0_391 on LAPTOP-1KP0AUAC with PID 19972 (D:\code\online-education-platform\online-education-platform-web\target\classes started by 19845 in D:\code\online-education-platform)
-2024-07-08 16:38:51 INFO  c.x.OnlineEducationPlatformWebApplication - No active profile set, falling back to 1 default profile: "default"
-2024-07-08 16:38:51 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-2024-07-08 16:38:51 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2024-07-08 16:38:51 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
-2024-07-08 16:38:52 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-2024-07-08 16:38:52 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2024-07-08 16:38:52 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
-2024-07-08 16:38:52 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2024-07-08 16:38:52 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 656 ms
-2024-07-08 16:38:52 INFO  com.xian.config.WebMvcConfiguration - 生成接口文档
-2024-07-08 16:38:53 INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
-2024-07-08 16:38:53 INFO  o.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
-2024-07-08 16:38:53 INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.3.2 created.
-2024-07-08 16:38:53 INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
-2024-07-08 16:38:53 INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
-  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
-  NOT STARTED.
-  Currently in standby mode.
-  Number of jobs executed: 0
-  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
-  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
-
-2024-07-08 16:38:53 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
-2024-07-08 16:38:53 INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.3.2
-2024-07-08 16:38:53 INFO  org.quartz.core.QuartzScheduler - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@3887c7d7
-2024-07-08 16:38:53 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-2024-07-08 16:38:53 INFO  o.s.s.quartz.SchedulerFactoryBean - Starting Quartz Scheduler now
-2024-07-08 16:38:53 INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED started.
-2024-07-08 16:38:53 INFO  c.x.OnlineEducationPlatformWebApplication - Started OnlineEducationPlatformWebApplication in 1.871 seconds (JVM running for 2.307)
-2024-07-08 17:55:54 INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
-2024-07-08 17:55:55 INFO  o.s.s.quartz.SchedulerFactoryBean - Shutting down Quartz Scheduler
-2024-07-08 17:55:55 INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
-2024-07-08 17:55:55 INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
-2024-07-08 17:55:55 INFO  org.quartz.core.QuartzScheduler - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
-2024-07-08 17:55:59 INFO  c.x.OnlineEducationPlatformWebApplication - Starting OnlineEducationPlatformWebApplication using Java 1.8.0_391 on LAPTOP-1KP0AUAC with PID 5828 (D:\code\online-education-platform\online-education-platform-web\target\classes started by 19845 in D:\code\online-education-platform)
-2024-07-08 17:55:59 INFO  c.x.OnlineEducationPlatformWebApplication - No active profile set, falling back to 1 default profile: "default"
-2024-07-08 17:55:59 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-2024-07-08 17:55:59 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2024-07-08 17:55:59 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
-2024-07-08 17:56:00 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-2024-07-08 17:56:00 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2024-07-08 17:56:00 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
-2024-07-08 17:56:00 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2024-07-08 17:56:00 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 738 ms
-2024-07-08 17:56:01 INFO  com.xian.config.WebMvcConfiguration - 生成接口文档
-2024-07-08 17:56:01 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-2024-07-08 17:56:01 INFO  c.x.OnlineEducationPlatformWebApplication - Started OnlineEducationPlatformWebApplication in 1.954 seconds (JVM running for 2.347)
-2024-07-08 17:56:15 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-07-08 17:56:15 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2024-07-08 17:56:15 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-2024-07-08 17:56:15 WARN  o.s.web.servlet.PageNotFound - No mapping for GET /favicon.ico
-2024-07-08 17:56:16 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器开始运行
-2024-07-08 17:56:21 WARN  o.s.web.servlet.PageNotFound - No mapping for GET /favicon.ico
-2024-07-08 17:56:21 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器开始运行
-2024-07-08 17:57:22 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2024-07-08 17:57:23 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2024-07-08 17:57:24 ERROR o.s.s.s.TaskUtils$LoggingErrorHandler - Unexpected error occurred in scheduled task
-org.springframework.mail.MailSendException: Mail server connection failed; nested exception is javax.mail.MessagingException: Got bad greeting from SMTP host: smtp.qq.com, port: 110, response: +OK XMail POP3 Server v1.0 Service Ready(XMail v1.0)
-. Failed messages: javax.mail.MessagingException: Got bad greeting from SMTP host: smtp.qq.com, port: 110, response: +OK XMail POP3 Server v1.0 Service Ready(XMail v1.0)
-
-	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:448)
-	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:323)
-	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:312)
-	at com.xian.service.impl.EmailServiceImpl.sendSimpleMail(EmailServiceImpl.java:47)
-	at com.xian.scheduler.UserRegisterConsumer.consumeRegisterMessages(UserRegisterConsumer.java:27)
-	at sun.reflect.GeneratedMethodAccessor84.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
-	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
-	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:750)
-Caused by: javax.mail.MessagingException: Got bad greeting from SMTP host: smtp.qq.com, port: 110, response: +OK XMail POP3 Server v1.0 Service Ready(XMail v1.0)
-
-	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:2198)
-	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:722)
-	at javax.mail.Service.connect(Service.java:342)
-	at org.springframework.mail.javamail.JavaMailSenderImpl.connectTransport(JavaMailSenderImpl.java:518)
-	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:437)
-	... 16 common frames omitted
-2024-07-08 17:59:50 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2024-07-08 17:59:51 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2024-07-08 17:59:54 INFO  c.x.OnlineEducationPlatformWebApplication - Starting OnlineEducationPlatformWebApplication using Java 1.8.0_391 on LAPTOP-1KP0AUAC with PID 20208 (D:\code\online-education-platform\online-education-platform-web\target\classes started by 19845 in D:\code\online-education-platform)
-2024-07-08 17:59:54 INFO  c.x.OnlineEducationPlatformWebApplication - No active profile set, falling back to 1 default profile: "default"
-2024-07-08 17:59:54 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-2024-07-08 17:59:54 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2024-07-08 17:59:54 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
-2024-07-08 17:59:54 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-2024-07-08 17:59:54 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2024-07-08 17:59:54 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
-2024-07-08 17:59:54 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2024-07-08 17:59:54 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 740 ms
-2024-07-08 17:59:55 INFO  com.xian.config.WebMvcConfiguration - 生成接口文档
-2024-07-08 17:59:56 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-2024-07-08 17:59:56 INFO  c.x.OnlineEducationPlatformWebApplication - Started OnlineEducationPlatformWebApplication in 2.083 seconds (JVM running for 2.508)
-2024-07-08 18:00:17 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-07-08 18:00:17 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2024-07-08 18:00:17 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
-2024-07-08 18:00:17 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2024-07-08 18:00:18 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2024-07-08 18:00:18 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.RuntimeException: 用户名已存在] with root cause
-java.lang.RuntimeException: 用户名已存在
-	at com.xian.service.impl.UsersServiceImpl.register(UsersServiceImpl.java:110)
-	at com.xian.controller.UsersController.register(UsersController.java:43)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1070)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.lang.Thread.run(Thread.java:750)
-2024-07-08 18:00:18 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器开始运行
-2024-07-08 18:00:18 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
-2024-07-08 18:01:30 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2024-07-08 18:01:31 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2024-07-08 18:01:33 INFO  c.x.OnlineEducationPlatformWebApplication - Starting OnlineEducationPlatformWebApplication using Java 1.8.0_391 on LAPTOP-1KP0AUAC with PID 13464 (D:\code\online-education-platform\online-education-platform-web\target\classes started by 19845 in D:\code\online-education-platform)
-2024-07-08 18:01:33 INFO  c.x.OnlineEducationPlatformWebApplication - No active profile set, falling back to 1 default profile: "default"
-2024-07-08 18:01:33 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-2024-07-08 18:01:33 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2024-07-08 18:01:33 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
-2024-07-08 18:01:34 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-2024-07-08 18:01:34 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2024-07-08 18:01:34 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
-2024-07-08 18:01:34 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2024-07-08 18:01:34 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 714 ms
-2024-07-08 18:01:34 INFO  com.xian.config.WebMvcConfiguration - 生成接口文档
-2024-07-08 18:01:35 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-2024-07-08 18:01:35 INFO  c.x.OnlineEducationPlatformWebApplication - Started OnlineEducationPlatformWebApplication in 2.076 seconds (JVM running for 2.528)
-2024-07-08 18:01:42 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-07-08 18:01:42 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2024-07-08 18:01:42 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-2024-07-08 18:01:42 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2024-07-08 18:01:43 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2024-07-08 18:01:44 ERROR c.x.scheduler.UserRegisterConsumer - 处理消息时出错
-org.springframework.mail.MailSendException: Mail server connection failed; nested exception is javax.mail.MessagingException: Got bad greeting from SMTP host: smtp.qq.com, port: 110, response: +OK XMail POP3 Server v1.0 Service Ready(XMail v1.0)
-. Failed messages: javax.mail.MessagingException: Got bad greeting from SMTP host: smtp.qq.com, port: 110, response: +OK XMail POP3 Server v1.0 Service Ready(XMail v1.0)
-
-	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:448)
-	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:323)
-	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:312)
-	at com.xian.service.impl.EmailServiceImpl.sendSimpleMail(EmailServiceImpl.java:47)
-	at com.xian.scheduler.UserRegisterConsumer.consumeRegisterMessages(UserRegisterConsumer.java:30)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
-	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
-	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
-	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:750)
-Caused by: javax.mail.MessagingException: Got bad greeting from SMTP host: smtp.qq.com, port: 110, response: +OK XMail POP3 Server v1.0 Service Ready(XMail v1.0)
-
-	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:2198)
-	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:722)
-	at javax.mail.Service.connect(Service.java:342)
-	at org.springframework.mail.javamail.JavaMailSenderImpl.connectTransport(JavaMailSenderImpl.java:518)
-	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:437)
-	... 17 common frames omitted
-2024-07-08 18:04:00 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2024-07-08 18:04:00 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2024-07-08 18:04:02 INFO  c.x.OnlineEducationPlatformWebApplication - Starting OnlineEducationPlatformWebApplication using Java 1.8.0_391 on LAPTOP-1KP0AUAC with PID 24188 (D:\code\online-education-platform\online-education-platform-web\target\classes started by 19845 in D:\code\online-education-platform)
-2024-07-08 18:04:02 INFO  c.x.OnlineEducationPlatformWebApplication - No active profile set, falling back to 1 default profile: "default"
-2024-07-08 18:04:03 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-2024-07-08 18:04:03 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2024-07-08 18:04:03 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
-2024-07-08 18:04:03 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-2024-07-08 18:04:03 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2024-07-08 18:04:03 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
-2024-07-08 18:04:03 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2024-07-08 18:04:03 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 705 ms
-2024-07-08 18:04:04 INFO  com.xian.config.WebMvcConfiguration - 生成接口文档
-2024-07-08 18:04:04 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-2024-07-08 18:04:04 INFO  c.x.OnlineEducationPlatformWebApplication - Started OnlineEducationPlatformWebApplication in 2.047 seconds (JVM running for 2.484)
-2024-07-08 18:04:09 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-07-08 18:04:09 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2024-07-08 18:04:09 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-2024-07-08 18:04:09 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2024-07-08 18:04:10 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2024-07-08 18:08:44 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2024-07-08 18:08:44 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2024-07-08 18:08:47 INFO  c.x.OnlineEducationPlatformWebApplication - Starting OnlineEducationPlatformWebApplication using Java 1.8.0_391 on LAPTOP-1KP0AUAC with PID 10296 (D:\code\online-education-platform\online-education-platform-web\target\classes started by 19845 in D:\code\online-education-platform)
-2024-07-08 18:08:47 INFO  c.x.OnlineEducationPlatformWebApplication - No active profile set, falling back to 1 default profile: "default"
-2024-07-08 18:08:48 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-2024-07-08 18:08:48 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2024-07-08 18:08:48 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
-2024-07-08 18:08:48 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-2024-07-08 18:08:48 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2024-07-08 18:08:48 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
-2024-07-08 18:08:48 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2024-07-08 18:08:48 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 649 ms
-2024-07-08 18:08:49 INFO  com.xian.config.WebMvcConfiguration - 生成接口文档
-2024-07-08 18:08:49 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-2024-07-08 18:08:49 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:08:49 INFO  c.x.OnlineEducationPlatformWebApplication - Started OnlineEducationPlatformWebApplication in 1.845 seconds (JVM running for 2.228)
-2024-07-08 18:08:50 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:08:51 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:08:52 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:08:54 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:08:55 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:08:56 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:08:57 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:08:58 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:08:59 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:09:00 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:09:01 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:09:02 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:09:03 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:09:04 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:09:05 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:09:06 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:09:07 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:09:08 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:09:09 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:09:10 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:09:11 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:09:12 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:09:13 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:09:15 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:09:16 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:09:17 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:09:18 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:09:19 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:09:20 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:09:21 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:09:22 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:09:23 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:09:24 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:09:25 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:09:26 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:09:27 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:09:28 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:09:29 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:09:30 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:09:31 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:09:32 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:09:33 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:09:35 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:09:36 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:09:37 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:09:38 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:09:39 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:09:40 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:09:41 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:09:42 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:09:43 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:09:44 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:09:45 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:09:46 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:09:47 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:09:48 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:09:49 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:09:50 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:09:51 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:09:52 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:09:53 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:09:54 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:09:55 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:09:57 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:09:58 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:09:59 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:10:00 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:10:01 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:10:02 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:10:03 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:10:04 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:10:05 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:10:06 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:10:07 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:10:08 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:10:09 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:10:10 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:10:11 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:10:12 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:10:13 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:10:14 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:10:15 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:10:16 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:10:18 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:10:19 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:10:20 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:10:21 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:10:22 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:10:23 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:10:24 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:10:25 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:10:26 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:10:27 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:10:28 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:10:29 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:10:30 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:10:31 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:10:32 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:10:33 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:10:34 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:10:35 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:10:36 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:10:38 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:10:39 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:10:40 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:10:41 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-07-08 18:10:42 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
+2024-09-18 00:04:18 INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /47.98.224.148:6379
+2024-09-18 00:04:18 INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 47.98.224.148:6379
+2024-09-18 00:06:42 INFO  c.x.OnlineEducationPlatformWebApplication - Starting OnlineEducationPlatformWebApplication using Java 1.8.0_391 on LAPTOP-1KP0AUAC with PID 18120 (D:\code\online-education-platform\online-education-platform-web\target\classes started by 19845 in D:\code\online-education-platform)
+2024-09-18 00:06:42 INFO  c.x.OnlineEducationPlatformWebApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-18 00:06:43 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-09-18 00:06:43 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-09-18 00:06:43 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2024-09-18 00:06:43 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-09-18 00:06:43 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-09-18 00:06:43 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
+2024-09-18 00:06:43 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-09-18 00:06:43 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 884 ms
+2024-09-18 00:06:44 INFO  com.xian.config.WebMvcConfiguration - 生成接口文档
+2024-09-18 00:06:44 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-09-18 00:06:44 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
+2024-09-18 00:06:44 INFO  c.x.OnlineEducationPlatformWebApplication - Started OnlineEducationPlatformWebApplication in 2.439 seconds (JVM running for 3.034)
+2024-09-18 00:06:51 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-18 00:06:51 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-09-18 00:06:51 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-09-18 00:06:51 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-18 00:06:51 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/videos/upload]
+2024-09-18 00:06:51 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-18 00:07:50 WARN  o.s.web.servlet.PageNotFound - No mapping for GET /online/videos/bf08c2e2-b0c4-4465-b9c0-acbb50cf77e8
+2024-09-18 00:08:02 WARN  o.s.web.servlet.PageNotFound - No mapping for GET /online/videos/bf08c2e2-b0c4-4465-b9c0-acbb50cf77e8.
+2024-09-18 00:08:22 WARN  o.s.web.servlet.PageNotFound - No mapping for GET /online/play/bf08c2e2-b0c4-4465-b9c0-acbb50cf77e8.
+2024-09-18 00:08:27 WARN  o.s.web.servlet.PageNotFound - No mapping for GET /online/play/bf08c2e2-b0c4-4465-b9c0-acbb50cf77e8
+2024-09-18 00:08:52 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-18 00:08:52 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/videos/play/bf08c2e2-b0c4-4465-b9c0-acbb50cf77e8]
+2024-09-18 00:08:52 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-18 00:13:53 INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /47.98.224.148:6379
+2024-09-18 00:13:53 INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 47.98.224.148:6379
+2024-09-18 00:18:54 INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /47.98.224.148:6379
+2024-09-18 00:18:54 INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 47.98.224.148:6379
+2024-09-18 00:21:04 INFO  c.x.OnlineEducationPlatformWebApplication - Starting OnlineEducationPlatformWebApplication using Java 1.8.0_391 on LAPTOP-1KP0AUAC with PID 10936 (D:\code\online-education-platform\online-education-platform-web\target\classes started by 19845 in D:\code\online-education-platform)
+2024-09-18 00:21:04 INFO  c.x.OnlineEducationPlatformWebApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-18 00:21:04 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-09-18 00:21:04 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-09-18 00:21:04 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2024-09-18 00:21:04 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-09-18 00:21:04 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-09-18 00:21:04 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
+2024-09-18 00:21:05 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-09-18 00:21:05 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 954 ms
+2024-09-18 00:21:06 INFO  com.xian.config.WebMvcConfiguration - 生成接口文档
+2024-09-18 00:21:06 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-09-18 00:21:06 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
+2024-09-18 00:21:06 INFO  c.x.OnlineEducationPlatformWebApplication - Started OnlineEducationPlatformWebApplication in 2.714 seconds (JVM running for 3.357)
+2024-09-18 00:22:02 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-18 00:22:02 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-09-18 00:22:02 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-09-18 00:22:02 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-18 00:22:02 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/videos/delete/bf08c2e2-b0c4-4465-b9c0-acbb50cf77e8]
+2024-09-18 00:22:02 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-18 00:22:25 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-18 00:22:25 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/videos/delete/da581132-2627-4290-b528-06e9367509bb]
+2024-09-18 00:22:25 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-18 00:25:01 INFO  c.x.OnlineEducationPlatformWebApplication - Starting OnlineEducationPlatformWebApplication using Java 1.8.0_391 on LAPTOP-1KP0AUAC with PID 19644 (D:\code\online-education-platform\online-education-platform-web\target\classes started by 19845 in D:\code\online-education-platform)
+2024-09-18 00:25:01 INFO  c.x.OnlineEducationPlatformWebApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-18 00:25:01 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-09-18 00:25:01 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-09-18 00:25:01 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2024-09-18 00:25:02 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-09-18 00:25:02 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-09-18 00:25:02 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
+2024-09-18 00:25:02 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-09-18 00:25:02 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1035 ms
+2024-09-18 00:25:03 INFO  com.xian.config.WebMvcConfiguration - 生成接口文档
+2024-09-18 00:25:03 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-09-18 00:25:03 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
+2024-09-18 00:25:03 INFO  c.x.OnlineEducationPlatformWebApplication - Started OnlineEducationPlatformWebApplication in 2.86 seconds (JVM running for 3.492)
+2024-09-18 00:25:38 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-18 00:25:38 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-09-18 00:25:38 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-09-18 00:25:38 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-18 00:25:38 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/videos/delete/da581132-2627-4290-b528-06e9367509bb]
+2024-09-18 00:25:38 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-18 00:25:44 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-18 00:25:44 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/videos/play/bf08c2e2-b0c4-4465-b9c0-acbb50cf77e8]
+2024-09-18 00:25:44 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-18 00:26:23 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-18 00:26:23 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/videos/upload]
+2024-09-18 00:26:23 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-18 00:26:47 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-18 00:26:47 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/videos/play/cff1b8ff-b225-49b0-8b10-9e9d3eb9de05]
+2024-09-18 00:26:47 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-18 00:27:06 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-18 00:27:06 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/videos/delete/cff1b8ff-b225-49b0-8b10-9e9d3eb9de05]
+2024-09-18 00:27:06 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-18 18:56:39 INFO  c.x.OnlineEducationPlatformWebApplication - Starting OnlineEducationPlatformWebApplication using Java 1.8.0_391 on LAPTOP-1KP0AUAC with PID 25880 (D:\code\online-education-platform\online-education-platform-web\target\classes started by 19845 in D:\code\online-education-platform)
+2024-09-18 18:56:39 INFO  c.x.OnlineEducationPlatformWebApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-18 18:56:40 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-09-18 18:56:40 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-09-18 18:56:40 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2024-09-18 18:56:40 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-09-18 18:56:40 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-09-18 18:56:40 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
+2024-09-18 18:56:40 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-09-18 18:56:40 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1087 ms
+2024-09-18 18:56:41 INFO  com.xian.config.WebMvcConfiguration - 生成接口文档
+2024-09-18 18:56:42 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-09-18 18:56:42 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
+2024-09-18 18:56:42 INFO  c.x.OnlineEducationPlatformWebApplication - Started OnlineEducationPlatformWebApplication in 2.563 seconds (JVM running for 3.115)
+2024-09-18 18:57:48 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-18 18:57:48 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-09-18 18:57:48 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2024-09-18 18:57:48 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-18 18:57:48 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/videos/play/bf08c2e2-b0c4-4465-b9c0-acbb50cf77e8]
+2024-09-18 18:57:48 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-18 18:59:42 WARN  o.s.web.servlet.PageNotFound - No mapping for GET /favicon.ico
+2024-09-18 19:02:49 INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /47.98.224.148:6379
+2024-09-18 19:02:49 INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 47.98.224.148:6379
+2024-09-18 19:04:58 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-18 19:04:58 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/chapters/addChapter]
+2024-09-18 19:04:58 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-18 19:04:58 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'multipart/form-data;boundary=--------------------------350164142438890369504182;charset=UTF-8' not supported]
+2024-09-18 19:05:20 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-18 19:05:20 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/chapters/addChapter]
+2024-09-18 19:05:20 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-18 19:05:20 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'multipart/form-data;boundary=--------------------------558486596902299211188979;charset=UTF-8' not supported]
+2024-09-18 19:09:29 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-18 19:09:29 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/chapters/addChapter]
+2024-09-18 19:09:29 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-18 19:09:29 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'multipart/form-data;boundary=--------------------------037389653603716692209455;charset=UTF-8' not supported]
+2024-09-18 19:11:59 INFO  c.x.OnlineEducationPlatformWebApplication - Starting OnlineEducationPlatformWebApplication using Java 1.8.0_391 on LAPTOP-1KP0AUAC with PID 28164 (D:\code\online-education-platform\online-education-platform-web\target\classes started by 19845 in D:\code\online-education-platform)
+2024-09-18 19:11:59 INFO  c.x.OnlineEducationPlatformWebApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-18 19:11:59 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-09-18 19:11:59 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-09-18 19:11:59 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2024-09-18 19:11:59 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-09-18 19:12:00 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-09-18 19:12:00 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
+2024-09-18 19:12:00 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-09-18 19:12:00 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 731 ms
+2024-09-18 19:12:00 INFO  com.xian.config.WebMvcConfiguration - 生成接口文档
+2024-09-18 19:12:01 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-09-18 19:12:01 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
+2024-09-18 19:12:01 INFO  c.x.OnlineEducationPlatformWebApplication - Started OnlineEducationPlatformWebApplication in 2.041 seconds (JVM running for 2.472)
+2024-09-18 19:12:08 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-18 19:12:08 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-09-18 19:12:08 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-09-18 19:12:08 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-18 19:12:08 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/chapters/addChapter]
+2024-09-18 19:12:08 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-18 19:12:12 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-09-18 19:12:13 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-09-18 19:15:07 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-18 19:15:07 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/chapters/addChapter]
+2024-09-18 19:15:07 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-18 19:16:07 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-18 19:16:07 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/chapters/addChapter]
+2024-09-18 19:16:07 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-18 19:18:13 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-18 19:18:13 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/chapters/addChapter]
+2024-09-18 19:18:13 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-18 19:18:17 INFO  c.x.service.impl.ChaptersServiceImpl - chapters:com.xian.model.Chapters@43754ac5
+2024-09-18 19:20:13 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-18 19:20:13 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/chapters/addChapter]
+2024-09-18 19:20:13 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-18 19:20:17 INFO  c.x.service.impl.ChaptersServiceImpl - chapters:com.xian.model.Chapters@1168ffec
+2024-09-18 19:21:58 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-18 19:21:58 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/chapters//getChapterVideo/1]
+2024-09-18 19:21:58 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-18 19:22:12 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-18 19:22:12 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/chapters//getChapterVideo/1]
+2024-09-18 19:22:12 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-18 19:25:20 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-09-18 19:25:30 INFO  c.x.OnlineEducationPlatformWebApplication - Starting OnlineEducationPlatformWebApplication using Java 1.8.0_391 on LAPTOP-1KP0AUAC with PID 25856 (D:\code\online-education-platform\online-education-platform-web\target\classes started by 19845 in D:\code\online-education-platform)
+2024-09-18 19:25:30 INFO  c.x.OnlineEducationPlatformWebApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-18 19:25:30 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-09-18 19:25:30 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-09-18 19:25:30 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2024-09-18 19:25:30 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-09-18 19:25:30 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-09-18 19:25:30 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
+2024-09-18 19:25:30 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-09-18 19:25:30 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 737 ms
+2024-09-18 19:25:31 INFO  com.xian.config.WebMvcConfiguration - 生成接口文档
+2024-09-18 19:25:31 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-09-18 19:25:32 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
+2024-09-18 19:25:32 INFO  c.x.OnlineEducationPlatformWebApplication - Started OnlineEducationPlatformWebApplication in 2.045 seconds (JVM running for 2.481)
+2024-09-18 19:25:35 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-18 19:25:35 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-09-18 19:25:35 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2024-09-18 19:25:35 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-18 19:25:35 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/chapters//getChapterVideo/1]
+2024-09-18 19:25:36 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-18 19:25:36 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-09-18 19:25:36 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-09-18 19:26:58 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-09-18 19:26:59 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-09-18 19:27:02 INFO  c.x.OnlineEducationPlatformWebApplication - Starting OnlineEducationPlatformWebApplication using Java 1.8.0_391 on LAPTOP-1KP0AUAC with PID 10296 (D:\code\online-education-platform\online-education-platform-web\target\classes started by 19845 in D:\code\online-education-platform)
+2024-09-18 19:27:02 INFO  c.x.OnlineEducationPlatformWebApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-18 19:27:03 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-09-18 19:27:03 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-09-18 19:27:03 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2024-09-18 19:27:03 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-09-18 19:27:03 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-09-18 19:27:03 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
+2024-09-18 19:27:03 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-09-18 19:27:03 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 766 ms
+2024-09-18 19:27:04 INFO  com.xian.config.WebMvcConfiguration - 生成接口文档
+2024-09-18 19:27:04 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-09-18 19:27:04 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
+2024-09-18 19:27:04 INFO  c.x.OnlineEducationPlatformWebApplication - Started OnlineEducationPlatformWebApplication in 2.118 seconds (JVM running for 2.563)
+2024-09-18 19:27:06 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-18 19:27:06 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-09-18 19:27:06 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-09-18 19:27:06 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-18 19:27:06 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/chapters//getChapterVideo/1]
+2024-09-18 19:27:07 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-18 19:27:07 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-09-18 19:27:07 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-09-18 19:29:06 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-18 19:29:06 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/chapters//getChapterVideo/1]
+2024-09-18 19:29:06 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-18 19:29:39 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-18 19:29:39 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/chapters/addChapter]
+2024-09-18 19:29:39 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-18 19:29:43 INFO  c.x.service.impl.ChaptersServiceImpl - chapters:com.xian.model.Chapters@2e1c4a67
+2024-09-18 19:29:49 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-18 19:29:49 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/chapters//getChapterVideo/1]
+2024-09-18 19:29:49 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}

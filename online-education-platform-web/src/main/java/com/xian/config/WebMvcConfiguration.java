@@ -1,11 +1,20 @@
 package com.xian.config;
 
 
+import com.fasterxml.jackson.core.JsonGenerator;
+import com.fasterxml.jackson.databind.JsonSerializer;
+import com.fasterxml.jackson.databind.SerializerProvider;
+import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
+import com.fasterxml.jackson.datatype.jsr310.ser.LocalDateTimeSerializer;
 import com.xian.interceptor.JwtInterceptor;
+import com.xian.json.JacksonObjectMapper;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.jackson.Jackson2ObjectMapperBuilderCustomizer;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.http.converter.HttpMessageConverter;
+import org.springframework.http.converter.json.MappingJackson2HttpMessageConverter;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport;
@@ -16,7 +25,10 @@ import springfox.documentation.service.ApiInfo;
 import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
 
-
+import java.io.IOException;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.util.List;
 
 
 @Configuration
@@ -29,16 +41,10 @@ public class WebMvcConfiguration extends WebMvcConfigurationSupport {
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(jwtInterceptor)
-                .addPathPatterns("/**") // 需要拦截的路径
-                .excludePathPatterns("/users/login") // 排除登录路径
-                .excludePathPatterns("/users/register") // 排除注册路径
-                .excludePathPatterns("/swagger-ui/**")  // 排除 Swagger UI 路径
-                .excludePathPatterns("/v2/api-docs/**") // 排除 Swagger 的 API 文档路径
-                .excludePathPatterns("/swagger-resources/**") // 排除 Swagger 资源路径
-                .excludePathPatterns("/webjars/**") // 排除 Swagger 的 webjars 资源路径
-                .excludePathPatterns("/actuator/**") // 排除 Actuator 的路径（如果有使用 Actuator）
-                .excludePathPatterns("/doc.html") // 排除 Swagger 的静态资源路径
-                .order(1); // 设置拦截器的优先级
+                .addPathPatterns("/online/**") // 需要拦截的路径
+                .excludePathPatterns("/online/users/login") // 排除登录路径
+                .excludePathPatterns("/online/users/register"); // 排除注册路径
+
     }
 
     /**
@@ -67,9 +73,15 @@ public class WebMvcConfiguration extends WebMvcConfigurationSupport {
                 .build();
     }
 
-
-
-
-
-
+    @Override
+    protected void extendMessageConverters(List<HttpMessageConverter<?>> converters) {
+        MappingJackson2HttpMessageConverter jackson2HttpMessageConverter = new MappingJackson2HttpMessageConverter();
+        jackson2HttpMessageConverter.setObjectMapper(new JacksonObjectMapper());
+        converters.add(0,jackson2HttpMessageConverter);
+    }
 }
+
+
+
+
+

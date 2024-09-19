@@ -32,6 +32,10 @@ public class Courses implements Serializable {
     @TableId(value = "course_id", type = IdType.AUTO)
     private Integer courseId;
 
+    @ApiModelProperty("课程图片")
+    @TableField("image")
+    private String image;
+
     @ApiModelProperty("课程标题")
     @TableField("title")
     private String title;
@@ -40,9 +44,9 @@ public class Courses implements Serializable {
     @TableField("description")
     private String description;
 
-    @ApiModelProperty("课程分类")
-    @TableField("category")
-    private String category;
+    @ApiModelProperty("课程分类id")
+    @TableField("categoryId")
+    private Integer categoryId;
 
     @ApiModelProperty("课程价格")
     @TableField("price")

@@ -15,6 +15,6 @@ import org.springframework.stereotype.Service;
  * @since 2024-07-04
  */
 @Service
-public class ChapterVideosServiceImpl extends ServiceImpl<ChapterVideosMapper, ChapterVideos> implements IChapterVideosService {
+public class ChapterVideosServiceImpl  implements IChapterVideosService {
 
 }

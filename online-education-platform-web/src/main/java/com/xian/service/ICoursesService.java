@@ -2,6 +2,9 @@ package com.xian.service;
 
 import com.xian.model.Courses;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.xian.model.vo.CourseVo;
+
+import java.util.List;
 
 /**
  * <p>
@@ -11,6 +14,15 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * @author 鲜青松
  * @since 2024-07-04
  */
-public interface ICoursesService extends IService<Courses> {
+public interface ICoursesService  {
 
+    List<CourseVo> list();
+
+    Courses getById(Long courseId);
+
+    void save(Courses course);
+
+    void updateById(Courses course);
+
+    void removeById(Long courseId);
 }

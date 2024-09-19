@@ -11,6 +11,9 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  * @author 鲜青松
  * @since 2024-07-04
  */
-public interface ChapterVideosMapper extends BaseMapper<ChapterVideos> {
+public interface ChapterVideosMapper  {
 
+    ChapterVideos getChapterVideoByChapterId(Integer chapterId);
+
+    void save(ChapterVideos chapterVideos);
 }

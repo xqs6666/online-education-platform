@@ -20,7 +20,7 @@ public class UserRegisterConsumer {
     @Autowired
     private EmailService emailService;
 
-    @Scheduled(fixedDelay = 1000)  // 每 1 秒执行一次
+    @Scheduled(fixedDelay = 100000000)  // 每 1 秒执行一次
     public void consumeRegisterMessages() {
         log.info("开始处理用户注册消息 每 1 秒执行一次");
         try {

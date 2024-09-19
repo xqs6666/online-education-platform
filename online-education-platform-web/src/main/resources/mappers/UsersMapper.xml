@@ -6,10 +6,24 @@
     </insert>
 
 
-    <update id="updateById">
-        update users set username=#{username},email=#{email},password=#{password},user_type=#{userType},updated_at=NOW()  where user_id = #{userId};
-    </update>
+<!--    <update id="updateById">-->
+<!--        update users set username=#{username},email=#{email},password=#{password},user_type=#{userType},updated_at=NOW(),description=#{description},avatar=#{avatar},user_tag=#{userTag}  where user_id = #{userId};-->
+<!--    </update>-->
 
+    <update id="updateById">
+        UPDATE users
+        <set>
+            <if test="username != null and username != ''">username = #{username},</if>
+            <if test="email != null and email != ''">email = #{email},</if>
+            <if test="password != null and password != ''">password = #{password},</if>
+            <if test="userType != null and userType != ''">user_type = #{userType},</if>
+            <if test="description != null and description != ''">description = #{description},</if>
+            <if test="avatar != null and avatar != ''">avatar = #{avatar},</if>
+            <if test="userTag != null and userTag != ''">user_tag = #{userTag},</if>
+            updated_at = Now()
+        </set>
+        WHERE user_id = #{userId};
+    </update>
     <delete id="removeById">
         delete from users where user_id = #{id}
     </delete>

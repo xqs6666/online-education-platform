@@ -20,7 +20,7 @@ import java.util.List;
  * @since 2024-07-04
  */
 @RestController
-@RequestMapping("/users")
+@RequestMapping("/online/users")
 @Api(tags = "UsersController")
 public class UsersController {
     @Autowired
@@ -63,9 +63,9 @@ public class UsersController {
 
     //获取单个用户信息
     @GetMapping("/getUser")
-    @ApiOperation(value = "获取单个用户信息")
-    public Result<Users> getUser(Integer id) {
-        return Result.success(iUsersService.getById(id));
+    @ApiOperation(value = "获取用户信息")
+    public Result<Users> getUser() {
+        return Result.success(iUsersService.getById());
     }
 
     //新增用户信息
@@ -92,8 +92,5 @@ public class UsersController {
         iUsersService.updateById(users);
         return Result.success();
     }
-
-
-
 
 }

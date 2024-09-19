@@ -11,6 +11,6 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * @author 鲜青松
  * @since 2024-07-04
  */
-public interface IChapterVideosService extends IService<ChapterVideos> {
+public interface IChapterVideosService  {
 
 }

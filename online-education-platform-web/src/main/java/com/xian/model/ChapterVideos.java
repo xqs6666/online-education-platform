@@ -42,4 +42,8 @@ public class ChapterVideos implements Serializable {
     @ApiModelProperty("上传日期")
     @TableField("uploaded_at")
     private LocalDateTime uploadedAt;
+
+    @ApiModelProperty("视频代码")
+    @TableField("video_code")
+    private String videoCode;
 }

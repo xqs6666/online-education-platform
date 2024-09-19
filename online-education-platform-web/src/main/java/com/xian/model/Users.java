@@ -47,9 +47,23 @@ public class Users implements Serializable {
     @TableField("user_type")
     private String userType;
 
+    @ApiModelProperty("用户标签")
+    @TableField("user_tag")
+    private String userTag;
+
+    @ApiModelProperty("用户描述")
+    @TableField("description")
+    private String description;
+
+
+    @ApiModelProperty("用户头像")
+    @TableField("avatar")
+    private String avatar;
+
     @ApiModelProperty("注册日期")
     @TableField("created_at")
     private LocalDateTime createdAt;
+
 
     @ApiModelProperty("更新时间")
     @TableField("updated_at")
