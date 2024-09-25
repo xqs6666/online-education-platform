@@ -41,4 +41,7 @@
     <select id="queryUserByEmail" resultType="com.xian.model.Users">
         select * from users where email = #{email}
     </select>
+    <select id="queryUserNameById" resultType="com.xian.model.Users">
+        select username from users where user_id = #{userId}
+    </select>
 </mapper>

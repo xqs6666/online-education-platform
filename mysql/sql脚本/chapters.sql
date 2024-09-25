@@ -14,3 +14,5 @@ create table chapters
 create index idx_chapters_course_id
     on chapters (course_id);
 
+INSERT INTO online_education_platform.chapters (chapter_id, course_id, title, description, created_at, updated_at) VALUES (2, 1, '第一节', '认识jre与jvm', '2024-09-18 11:20:18', '2024-09-18 11:20:18');
+INSERT INTO online_education_platform.chapters (chapter_id, course_id, title, description, created_at, updated_at) VALUES (3, 1, '第二节', '认识常量与变量', '2024-09-18 11:29:43', '2024-09-18 11:29:43');

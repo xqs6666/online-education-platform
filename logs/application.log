@@ -1,222 +1,648 @@
-2024-09-18 00:04:18 INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /47.98.224.148:6379
-2024-09-18 00:04:18 INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 47.98.224.148:6379
-2024-09-18 00:06:42 INFO  c.x.OnlineEducationPlatformWebApplication - Starting OnlineEducationPlatformWebApplication using Java 1.8.0_391 on LAPTOP-1KP0AUAC with PID 18120 (D:\code\online-education-platform\online-education-platform-web\target\classes started by 19845 in D:\code\online-education-platform)
-2024-09-18 00:06:42 INFO  c.x.OnlineEducationPlatformWebApplication - No active profile set, falling back to 1 default profile: "default"
-2024-09-18 00:06:43 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-2024-09-18 00:06:43 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2024-09-18 00:06:43 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
-2024-09-18 00:06:43 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-2024-09-18 00:06:43 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2024-09-18 00:06:43 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
-2024-09-18 00:06:43 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2024-09-18 00:06:43 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 884 ms
-2024-09-18 00:06:44 INFO  com.xian.config.WebMvcConfiguration - 生成接口文档
-2024-09-18 00:06:44 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-2024-09-18 00:06:44 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-09-18 00:06:44 INFO  c.x.OnlineEducationPlatformWebApplication - Started OnlineEducationPlatformWebApplication in 2.439 seconds (JVM running for 3.034)
-2024-09-18 00:06:51 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-09-18 00:06:51 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2024-09-18 00:06:51 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-2024-09-18 00:06:51 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
-2024-09-18 00:06:51 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/videos/upload]
-2024-09-18 00:06:51 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
-2024-09-18 00:07:50 WARN  o.s.web.servlet.PageNotFound - No mapping for GET /online/videos/bf08c2e2-b0c4-4465-b9c0-acbb50cf77e8
-2024-09-18 00:08:02 WARN  o.s.web.servlet.PageNotFound - No mapping for GET /online/videos/bf08c2e2-b0c4-4465-b9c0-acbb50cf77e8.
-2024-09-18 00:08:22 WARN  o.s.web.servlet.PageNotFound - No mapping for GET /online/play/bf08c2e2-b0c4-4465-b9c0-acbb50cf77e8.
-2024-09-18 00:08:27 WARN  o.s.web.servlet.PageNotFound - No mapping for GET /online/play/bf08c2e2-b0c4-4465-b9c0-acbb50cf77e8
-2024-09-18 00:08:52 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
-2024-09-18 00:08:52 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/videos/play/bf08c2e2-b0c4-4465-b9c0-acbb50cf77e8]
-2024-09-18 00:08:52 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
-2024-09-18 00:13:53 INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /47.98.224.148:6379
-2024-09-18 00:13:53 INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 47.98.224.148:6379
-2024-09-18 00:18:54 INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /47.98.224.148:6379
-2024-09-18 00:18:54 INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 47.98.224.148:6379
-2024-09-18 00:21:04 INFO  c.x.OnlineEducationPlatformWebApplication - Starting OnlineEducationPlatformWebApplication using Java 1.8.0_391 on LAPTOP-1KP0AUAC with PID 10936 (D:\code\online-education-platform\online-education-platform-web\target\classes started by 19845 in D:\code\online-education-platform)
-2024-09-18 00:21:04 INFO  c.x.OnlineEducationPlatformWebApplication - No active profile set, falling back to 1 default profile: "default"
-2024-09-18 00:21:04 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-2024-09-18 00:21:04 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2024-09-18 00:21:04 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
-2024-09-18 00:21:04 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-2024-09-18 00:21:04 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2024-09-18 00:21:04 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
-2024-09-18 00:21:05 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2024-09-18 00:21:05 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 954 ms
-2024-09-18 00:21:06 INFO  com.xian.config.WebMvcConfiguration - 生成接口文档
-2024-09-18 00:21:06 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-2024-09-18 00:21:06 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-09-18 00:21:06 INFO  c.x.OnlineEducationPlatformWebApplication - Started OnlineEducationPlatformWebApplication in 2.714 seconds (JVM running for 3.357)
-2024-09-18 00:22:02 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-09-18 00:22:02 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2024-09-18 00:22:02 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-2024-09-18 00:22:02 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
-2024-09-18 00:22:02 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/videos/delete/bf08c2e2-b0c4-4465-b9c0-acbb50cf77e8]
-2024-09-18 00:22:02 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
-2024-09-18 00:22:25 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
-2024-09-18 00:22:25 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/videos/delete/da581132-2627-4290-b528-06e9367509bb]
-2024-09-18 00:22:25 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
-2024-09-18 00:25:01 INFO  c.x.OnlineEducationPlatformWebApplication - Starting OnlineEducationPlatformWebApplication using Java 1.8.0_391 on LAPTOP-1KP0AUAC with PID 19644 (D:\code\online-education-platform\online-education-platform-web\target\classes started by 19845 in D:\code\online-education-platform)
-2024-09-18 00:25:01 INFO  c.x.OnlineEducationPlatformWebApplication - No active profile set, falling back to 1 default profile: "default"
-2024-09-18 00:25:01 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-2024-09-18 00:25:01 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2024-09-18 00:25:01 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
-2024-09-18 00:25:02 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-2024-09-18 00:25:02 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2024-09-18 00:25:02 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
-2024-09-18 00:25:02 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2024-09-18 00:25:02 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1035 ms
-2024-09-18 00:25:03 INFO  com.xian.config.WebMvcConfiguration - 生成接口文档
-2024-09-18 00:25:03 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-2024-09-18 00:25:03 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-09-18 00:25:03 INFO  c.x.OnlineEducationPlatformWebApplication - Started OnlineEducationPlatformWebApplication in 2.86 seconds (JVM running for 3.492)
-2024-09-18 00:25:38 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-09-18 00:25:38 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2024-09-18 00:25:38 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
-2024-09-18 00:25:38 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
-2024-09-18 00:25:38 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/videos/delete/da581132-2627-4290-b528-06e9367509bb]
-2024-09-18 00:25:38 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
-2024-09-18 00:25:44 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
-2024-09-18 00:25:44 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/videos/play/bf08c2e2-b0c4-4465-b9c0-acbb50cf77e8]
-2024-09-18 00:25:44 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
-2024-09-18 00:26:23 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
-2024-09-18 00:26:23 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/videos/upload]
-2024-09-18 00:26:23 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
-2024-09-18 00:26:47 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
-2024-09-18 00:26:47 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/videos/play/cff1b8ff-b225-49b0-8b10-9e9d3eb9de05]
-2024-09-18 00:26:47 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
-2024-09-18 00:27:06 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
-2024-09-18 00:27:06 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/videos/delete/cff1b8ff-b225-49b0-8b10-9e9d3eb9de05]
-2024-09-18 00:27:06 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
-2024-09-18 18:56:39 INFO  c.x.OnlineEducationPlatformWebApplication - Starting OnlineEducationPlatformWebApplication using Java 1.8.0_391 on LAPTOP-1KP0AUAC with PID 25880 (D:\code\online-education-platform\online-education-platform-web\target\classes started by 19845 in D:\code\online-education-platform)
-2024-09-18 18:56:39 INFO  c.x.OnlineEducationPlatformWebApplication - No active profile set, falling back to 1 default profile: "default"
-2024-09-18 18:56:40 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-2024-09-18 18:56:40 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2024-09-18 18:56:40 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
-2024-09-18 18:56:40 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-2024-09-18 18:56:40 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2024-09-18 18:56:40 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
-2024-09-18 18:56:40 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2024-09-18 18:56:40 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1087 ms
-2024-09-18 18:56:41 INFO  com.xian.config.WebMvcConfiguration - 生成接口文档
-2024-09-18 18:56:42 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-2024-09-18 18:56:42 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-09-18 18:56:42 INFO  c.x.OnlineEducationPlatformWebApplication - Started OnlineEducationPlatformWebApplication in 2.563 seconds (JVM running for 3.115)
-2024-09-18 18:57:48 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-09-18 18:57:48 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2024-09-18 18:57:48 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
-2024-09-18 18:57:48 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
-2024-09-18 18:57:48 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/videos/play/bf08c2e2-b0c4-4465-b9c0-acbb50cf77e8]
-2024-09-18 18:57:48 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
-2024-09-18 18:59:42 WARN  o.s.web.servlet.PageNotFound - No mapping for GET /favicon.ico
-2024-09-18 19:02:49 INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /47.98.224.148:6379
-2024-09-18 19:02:49 INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 47.98.224.148:6379
-2024-09-18 19:04:58 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
-2024-09-18 19:04:58 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/chapters/addChapter]
-2024-09-18 19:04:58 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
-2024-09-18 19:04:58 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'multipart/form-data;boundary=--------------------------350164142438890369504182;charset=UTF-8' not supported]
-2024-09-18 19:05:20 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
-2024-09-18 19:05:20 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/chapters/addChapter]
-2024-09-18 19:05:20 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
-2024-09-18 19:05:20 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'multipart/form-data;boundary=--------------------------558486596902299211188979;charset=UTF-8' not supported]
-2024-09-18 19:09:29 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
-2024-09-18 19:09:29 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/chapters/addChapter]
-2024-09-18 19:09:29 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
-2024-09-18 19:09:29 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'multipart/form-data;boundary=--------------------------037389653603716692209455;charset=UTF-8' not supported]
-2024-09-18 19:11:59 INFO  c.x.OnlineEducationPlatformWebApplication - Starting OnlineEducationPlatformWebApplication using Java 1.8.0_391 on LAPTOP-1KP0AUAC with PID 28164 (D:\code\online-education-platform\online-education-platform-web\target\classes started by 19845 in D:\code\online-education-platform)
-2024-09-18 19:11:59 INFO  c.x.OnlineEducationPlatformWebApplication - No active profile set, falling back to 1 default profile: "default"
-2024-09-18 19:11:59 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-2024-09-18 19:11:59 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2024-09-18 19:11:59 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
-2024-09-18 19:11:59 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-2024-09-18 19:12:00 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2024-09-18 19:12:00 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
-2024-09-18 19:12:00 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2024-09-18 19:12:00 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 731 ms
-2024-09-18 19:12:00 INFO  com.xian.config.WebMvcConfiguration - 生成接口文档
-2024-09-18 19:12:01 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-2024-09-18 19:12:01 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-09-18 19:12:01 INFO  c.x.OnlineEducationPlatformWebApplication - Started OnlineEducationPlatformWebApplication in 2.041 seconds (JVM running for 2.472)
-2024-09-18 19:12:08 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-09-18 19:12:08 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2024-09-18 19:12:08 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-2024-09-18 19:12:08 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
-2024-09-18 19:12:08 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/chapters/addChapter]
-2024-09-18 19:12:08 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
-2024-09-18 19:12:12 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2024-09-18 19:12:13 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2024-09-18 19:15:07 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
-2024-09-18 19:15:07 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/chapters/addChapter]
-2024-09-18 19:15:07 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
-2024-09-18 19:16:07 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
-2024-09-18 19:16:07 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/chapters/addChapter]
-2024-09-18 19:16:07 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
-2024-09-18 19:18:13 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
-2024-09-18 19:18:13 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/chapters/addChapter]
-2024-09-18 19:18:13 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
-2024-09-18 19:18:17 INFO  c.x.service.impl.ChaptersServiceImpl - chapters:com.xian.model.Chapters@43754ac5
-2024-09-18 19:20:13 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
-2024-09-18 19:20:13 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/chapters/addChapter]
-2024-09-18 19:20:13 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
-2024-09-18 19:20:17 INFO  c.x.service.impl.ChaptersServiceImpl - chapters:com.xian.model.Chapters@1168ffec
-2024-09-18 19:21:58 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
-2024-09-18 19:21:58 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/chapters//getChapterVideo/1]
-2024-09-18 19:21:58 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
-2024-09-18 19:22:12 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
-2024-09-18 19:22:12 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/chapters//getChapterVideo/1]
-2024-09-18 19:22:12 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
-2024-09-18 19:25:20 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2024-09-18 19:25:30 INFO  c.x.OnlineEducationPlatformWebApplication - Starting OnlineEducationPlatformWebApplication using Java 1.8.0_391 on LAPTOP-1KP0AUAC with PID 25856 (D:\code\online-education-platform\online-education-platform-web\target\classes started by 19845 in D:\code\online-education-platform)
-2024-09-18 19:25:30 INFO  c.x.OnlineEducationPlatformWebApplication - No active profile set, falling back to 1 default profile: "default"
-2024-09-18 19:25:30 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-2024-09-18 19:25:30 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2024-09-18 19:25:30 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
-2024-09-18 19:25:30 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-2024-09-18 19:25:30 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2024-09-18 19:25:30 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
-2024-09-18 19:25:30 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2024-09-18 19:25:30 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 737 ms
-2024-09-18 19:25:31 INFO  com.xian.config.WebMvcConfiguration - 生成接口文档
-2024-09-18 19:25:31 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-2024-09-18 19:25:32 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-09-18 19:25:32 INFO  c.x.OnlineEducationPlatformWebApplication - Started OnlineEducationPlatformWebApplication in 2.045 seconds (JVM running for 2.481)
-2024-09-18 19:25:35 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-09-18 19:25:35 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2024-09-18 19:25:35 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
-2024-09-18 19:25:35 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
-2024-09-18 19:25:35 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/chapters//getChapterVideo/1]
-2024-09-18 19:25:36 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
-2024-09-18 19:25:36 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2024-09-18 19:25:36 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2024-09-18 19:26:58 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2024-09-18 19:26:59 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2024-09-18 19:27:02 INFO  c.x.OnlineEducationPlatformWebApplication - Starting OnlineEducationPlatformWebApplication using Java 1.8.0_391 on LAPTOP-1KP0AUAC with PID 10296 (D:\code\online-education-platform\online-education-platform-web\target\classes started by 19845 in D:\code\online-education-platform)
-2024-09-18 19:27:02 INFO  c.x.OnlineEducationPlatformWebApplication - No active profile set, falling back to 1 default profile: "default"
-2024-09-18 19:27:03 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-2024-09-18 19:27:03 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2024-09-18 19:27:03 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
-2024-09-18 19:27:03 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
-2024-09-18 19:27:03 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2024-09-18 19:27:03 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
-2024-09-18 19:27:03 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2024-09-18 19:27:03 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 766 ms
-2024-09-18 19:27:04 INFO  com.xian.config.WebMvcConfiguration - 生成接口文档
-2024-09-18 19:27:04 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
-2024-09-18 19:27:04 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
-2024-09-18 19:27:04 INFO  c.x.OnlineEducationPlatformWebApplication - Started OnlineEducationPlatformWebApplication in 2.118 seconds (JVM running for 2.563)
-2024-09-18 19:27:06 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-09-18 19:27:06 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2024-09-18 19:27:06 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-2024-09-18 19:27:06 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
-2024-09-18 19:27:06 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/chapters//getChapterVideo/1]
-2024-09-18 19:27:07 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
-2024-09-18 19:27:07 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2024-09-18 19:27:07 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2024-09-18 19:29:06 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
-2024-09-18 19:29:06 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/chapters//getChapterVideo/1]
-2024-09-18 19:29:06 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
-2024-09-18 19:29:39 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
-2024-09-18 19:29:39 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/chapters/addChapter]
-2024-09-18 19:29:39 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
-2024-09-18 19:29:43 INFO  c.x.service.impl.ChaptersServiceImpl - chapters:com.xian.model.Chapters@2e1c4a67
-2024-09-18 19:29:49 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
-2024-09-18 19:29:49 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/chapters//getChapterVideo/1]
-2024-09-18 19:29:49 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 15:19:11 INFO  c.x.OnlineEducationPlatformWebApplication - Starting OnlineEducationPlatformWebApplication using Java 1.8.0_391 on LAPTOP-1KP0AUAC with PID 15280 (D:\code\online-education-platform\online-education-platform-web\target\classes started by 19845 in D:\code\online-education-platform)
+2024-09-25 15:19:11 INFO  c.x.OnlineEducationPlatformWebApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-25 15:19:11 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-09-25 15:19:11 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-09-25 15:19:11 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2024-09-25 15:19:12 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-09-25 15:19:12 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-09-25 15:19:12 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
+2024-09-25 15:19:12 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-09-25 15:19:12 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1111 ms
+2024-09-25 15:19:13 INFO  com.xian.config.WebMvcConfiguration - 生成接口文档
+2024-09-25 15:19:13 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-09-25 15:19:13 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
+2024-09-25 15:19:13 INFO  c.x.OnlineEducationPlatformWebApplication - Started OnlineEducationPlatformWebApplication in 2.611 seconds (JVM running for 3.3)
+2024-09-25 15:19:25 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-25 15:19:25 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-09-25 15:19:25 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-09-25 15:19:26 WARN  o.s.web.servlet.PageNotFound - No mapping for GET /favicon.ico
+2024-09-25 15:19:31 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 15:19:31 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/comments/getComments]
+2024-09-25 15:19:38 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-09-25 15:19:39 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-09-25 15:19:51 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 15:19:51 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/comments/getComments]
+2024-09-25 15:19:51 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 15:21:38 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 15:21:38 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/comments/getComments]
+2024-09-25 15:21:38 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 15:21:51 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 15:21:51 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/comments/getComments]
+2024-09-25 15:21:51 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 15:26:52 INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /47.98.224.148:6379
+2024-09-25 15:26:52 INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 47.98.224.148:6379
+2024-09-25 15:31:53 INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /47.98.224.148:6379
+2024-09-25 15:31:53 INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 47.98.224.148:6379
+2024-09-25 15:36:54 INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /47.98.224.148:6379
+2024-09-25 15:36:54 INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 47.98.224.148:6379
+2024-09-25 15:41:55 INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /47.98.224.148:6379
+2024-09-25 15:41:55 INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 47.98.224.148:6379
+2024-09-25 15:46:56 INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /47.98.224.148:6379
+2024-09-25 15:46:56 INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 47.98.224.148:6379
+2024-09-25 15:51:57 INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /47.98.224.148:6379
+2024-09-25 15:51:57 INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 47.98.224.148:6379
+2024-09-25 15:56:58 INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /47.98.224.148:6379
+2024-09-25 15:56:58 INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 47.98.224.148:6379
+2024-09-25 16:01:47 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-09-25 16:01:56 INFO  c.x.OnlineEducationPlatformWebApplication - Starting OnlineEducationPlatformWebApplication using Java 1.8.0_391 on LAPTOP-1KP0AUAC with PID 1068 (D:\code\online-education-platform\online-education-platform-web\target\classes started by 19845 in D:\code\online-education-platform)
+2024-09-25 16:01:56 INFO  c.x.OnlineEducationPlatformWebApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-25 16:01:57 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-09-25 16:01:57 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-09-25 16:01:57 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2024-09-25 16:01:57 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-09-25 16:01:57 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-09-25 16:01:57 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
+2024-09-25 16:01:57 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-09-25 16:01:57 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 749 ms
+2024-09-25 16:01:58 INFO  com.xian.config.WebMvcConfiguration - 生成接口文档
+2024-09-25 16:01:58 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-09-25 16:01:58 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
+2024-09-25 16:01:58 INFO  c.x.OnlineEducationPlatformWebApplication - Started OnlineEducationPlatformWebApplication in 2.163 seconds (JVM running for 2.614)
+2024-09-25 16:02:02 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-25 16:02:02 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-09-25 16:02:02 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-09-25 16:02:06 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 16:02:06 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/comments/getComments]
+2024-09-25 16:02:06 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 16:02:06 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-09-25 16:02:07 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-09-25 16:07:07 INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /47.98.224.148:6379
+2024-09-25 16:07:07 INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 47.98.224.148:6379
+2024-09-25 16:12:08 INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /47.98.224.148:6379
+2024-09-25 16:12:08 INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 47.98.224.148:6379
+2024-09-25 16:13:58 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-09-25 16:14:08 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-09-25 16:14:11 INFO  c.x.OnlineEducationPlatformWebApplication - Starting OnlineEducationPlatformWebApplication using Java 1.8.0_391 on LAPTOP-1KP0AUAC with PID 10216 (D:\code\online-education-platform\online-education-platform-web\target\classes started by 19845 in D:\code\online-education-platform)
+2024-09-25 16:14:11 INFO  c.x.OnlineEducationPlatformWebApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-25 16:14:12 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-09-25 16:14:12 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-09-25 16:14:12 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2024-09-25 16:14:12 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-09-25 16:14:12 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-09-25 16:14:12 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
+2024-09-25 16:14:12 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-09-25 16:14:12 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 772 ms
+2024-09-25 16:14:13 INFO  com.xian.config.WebMvcConfiguration - 生成接口文档
+2024-09-25 16:14:13 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-09-25 16:14:13 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
+2024-09-25 16:14:13 INFO  c.x.OnlineEducationPlatformWebApplication - Started OnlineEducationPlatformWebApplication in 2.291 seconds (JVM running for 2.738)
+2024-09-25 16:17:34 INFO  c.x.OnlineEducationPlatformWebApplication - Starting OnlineEducationPlatformWebApplication using Java 1.8.0_391 on LAPTOP-1KP0AUAC with PID 25336 (D:\code\online-education-platform\online-education-platform-web\target\classes started by 19845 in D:\code\online-education-platform)
+2024-09-25 16:17:34 INFO  c.x.OnlineEducationPlatformWebApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-25 16:17:34 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-09-25 16:17:34 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-09-25 16:17:34 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2024-09-25 16:17:34 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-09-25 16:17:34 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-09-25 16:17:34 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
+2024-09-25 16:17:34 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-09-25 16:17:34 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 865 ms
+2024-09-25 16:17:35 INFO  com.xian.config.WebMvcConfiguration - 生成接口文档
+2024-09-25 16:17:36 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-09-25 16:17:36 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
+2024-09-25 16:17:36 INFO  c.x.OnlineEducationPlatformWebApplication - Started OnlineEducationPlatformWebApplication in 2.518 seconds (JVM running for 3.043)
+2024-09-25 16:19:15 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-25 16:19:15 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-09-25 16:19:15 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-09-25 16:19:15 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 16:19:15 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 16:19:15 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/users/getUser]
+2024-09-25 16:19:15 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/courses]
+2024-09-25 16:19:35 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-09-25 16:19:35 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-09-25 16:19:36 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 16:19:36 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 16:19:36 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/users/getUser]
+2024-09-25 16:19:36 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/courses]
+2024-09-25 16:19:36 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 16:19:36 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 16:19:39 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 16:19:39 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/chapters/getChapterVideo/1]
+2024-09-25 16:19:39 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 16:20:32 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 16:20:32 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/users/getUser]
+2024-09-25 16:20:32 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 16:20:32 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/chapters/getChapterVideo/1]
+2024-09-25 16:20:32 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 16:20:32 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 16:20:42 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 16:20:42 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 16:20:42 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/users/getUser]
+2024-09-25 16:20:42 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/chapters/getChapterVideo/1]
+2024-09-25 16:20:42 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 16:20:42 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 16:20:45 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 16:20:45 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/courses]
+2024-09-25 16:20:45 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 16:20:46 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 16:20:46 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/chapters/getChapterVideo/1]
+2024-09-25 16:20:46 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 16:21:03 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 16:21:03 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 16:21:03 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/users/getUser]
+2024-09-25 16:21:03 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/chapters/getChapterVideo/1]
+2024-09-25 16:21:03 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 16:21:03 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 16:21:15 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 16:21:15 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/users/getUser]
+2024-09-25 16:21:15 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 16:21:15 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/chapters/getChapterVideo/1]
+2024-09-25 16:21:15 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 16:21:15 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 16:21:17 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 16:21:17 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/courses]
+2024-09-25 16:21:17 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 16:21:18 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 16:21:18 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/chapters/getChapterVideo/2]
+2024-09-25 16:21:18 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 16:21:22 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 16:21:22 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/users/getUser]
+2024-09-25 16:21:22 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 16:21:22 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/chapters/getChapterVideo/2]
+2024-09-25 16:21:22 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 16:21:22 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 16:21:30 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 16:21:30 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/users/getUser]
+2024-09-25 16:21:30 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 16:21:30 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/chapters/getChapterVideo/2]
+2024-09-25 16:21:30 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 16:21:30 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 16:21:40 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 16:21:40 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 16:21:40 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/users/getUser]
+2024-09-25 16:21:40 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/chapters/getChapterVideo/2]
+2024-09-25 16:21:40 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 16:21:40 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 16:23:57 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 16:23:57 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 16:23:57 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/users/getUser]
+2024-09-25 16:23:57 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/chapters/getChapterVideo/2]
+2024-09-25 16:23:57 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 16:23:57 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 16:24:01 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 16:24:01 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 16:24:01 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/users/getUser]
+2024-09-25 16:24:01 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/chapters/getChapterVideo/2]
+2024-09-25 16:24:01 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 16:24:01 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 16:24:08 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 16:24:08 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/courses]
+2024-09-25 16:24:08 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 16:25:26 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 16:25:26 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/chapters/getChapterVideo/1]
+2024-09-25 16:25:26 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 16:27:21 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 16:27:21 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/users/getUser]
+2024-09-25 16:27:21 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 16:27:21 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/chapters/getChapterVideo/1]
+2024-09-25 16:27:21 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 16:27:21 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 16:32:21 INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /47.98.224.148:6379
+2024-09-25 16:32:21 INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 47.98.224.148:6379
+2024-09-25 16:37:22 INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /47.98.224.148:6379
+2024-09-25 16:37:22 INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 47.98.224.148:6379
+2024-09-25 16:39:41 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 16:39:41 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/courses]
+2024-09-25 16:39:41 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 16:39:41 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/users/getUser]
+2024-09-25 16:39:41 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 16:39:41 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 16:39:45 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 16:39:45 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 16:39:45 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/courses]
+2024-09-25 16:39:45 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/users/getUser]
+2024-09-25 16:39:45 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 16:39:45 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 16:39:51 WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@502854c1 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-09-25 16:39:51 WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@6ce39651 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-09-25 16:39:53 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 16:39:53 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/courses]
+2024-09-25 16:39:53 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 16:39:55 WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@229eed2e (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-09-25 16:39:55 WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@22705933 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-09-25 16:40:01 WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@4d2e1586 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-09-25 16:40:01 WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@7aac15d9 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-09-25 16:40:03 WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@6b293463 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-09-25 16:40:04 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 16:40:04 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/courses]
+2024-09-25 16:40:04 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 16:40:05 WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@71c09de9 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-09-25 16:40:05 WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@50092988 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-09-25 16:40:08 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 16:40:08 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/chapters/getChapterVideo/1]
+2024-09-25 16:40:08 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 16:40:11 WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@599d8700 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-09-25 16:40:54 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 16:40:54 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/courses]
+2024-09-25 16:40:54 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 16:40:55 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 16:40:55 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/chapters/getChapterVideo/2]
+2024-09-25 16:40:55 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 16:42:05 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 16:42:05 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 16:42:05 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/users/getUser]
+2024-09-25 16:42:05 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/chapters/getChapterVideo/2]
+2024-09-25 16:42:05 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 16:42:05 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 16:47:06 INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /47.98.224.148:6379
+2024-09-25 16:47:06 INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 47.98.224.148:6379
+2024-09-25 16:47:13 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 16:47:13 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/users/getUser]
+2024-09-25 16:47:13 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 16:47:13 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/courses]
+2024-09-25 16:47:13 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 16:47:13 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 16:47:14 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 16:47:14 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/chapters/getChapterVideo/1]
+2024-09-25 16:47:14 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 16:50:00 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 16:50:00 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/courses]
+2024-09-25 16:50:00 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 16:50:01 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 16:50:01 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/chapters/getChapterVideo/1]
+2024-09-25 16:50:01 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 16:51:51 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 16:51:51 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/courses]
+2024-09-25 16:51:51 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 16:51:52 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 16:51:52 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/chapters/getChapterVideo/2]
+2024-09-25 16:51:52 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 16:52:08 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 16:52:08 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/courses]
+2024-09-25 16:52:08 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 16:52:10 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 16:52:10 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/chapters/getChapterVideo/1]
+2024-09-25 16:52:10 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 16:56:27 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 16:56:27 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 16:56:27 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/users/getUser]
+2024-09-25 16:56:27 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/chapters/getChapterVideo/1]
+2024-09-25 16:56:27 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 16:56:27 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 16:57:54 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 16:57:54 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/users/getUser]
+2024-09-25 16:57:54 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 16:57:54 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/chapters/getChapterVideo/1]
+2024-09-25 16:57:54 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 16:57:54 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 16:58:06 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 16:58:06 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 16:58:06 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/users/getUser]
+2024-09-25 16:58:06 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/chapters/getChapterVideo/1]
+2024-09-25 16:58:06 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 16:58:06 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 17:00:03 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 17:00:03 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/users/getUser]
+2024-09-25 17:00:03 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 17:00:03 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/chapters/getChapterVideo/1]
+2024-09-25 17:00:03 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 17:00:03 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 17:03:21 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 17:03:21 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/users/getUser]
+2024-09-25 17:03:21 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 17:03:21 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/chapters/getChapterVideo/1]
+2024-09-25 17:03:21 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 17:03:21 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 17:03:57 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 17:03:57 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 17:03:57 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/users/getUser]
+2024-09-25 17:03:57 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/chapters/getChapterVideo/1]
+2024-09-25 17:03:57 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 17:03:57 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 17:04:23 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 17:04:23 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/users/getUser]
+2024-09-25 17:04:23 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 17:04:23 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/chapters/getChapterVideo/1]
+2024-09-25 17:04:24 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 17:04:24 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 17:07:40 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 17:07:40 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/users/getUser]
+2024-09-25 17:07:40 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 17:07:40 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/chapters/getChapterVideo/1]
+2024-09-25 17:07:40 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 17:07:40 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 17:08:34 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 17:08:34 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 17:08:34 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/users/getUser]
+2024-09-25 17:08:34 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/chapters/getChapterVideo/1]
+2024-09-25 17:08:34 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 17:08:34 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 17:10:21 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 17:10:21 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/users/getUser]
+2024-09-25 17:10:21 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 17:10:21 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/chapters/getChapterVideo/1]
+2024-09-25 17:10:21 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 17:10:21 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 17:13:46 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 17:13:46 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 17:13:46 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/chapters/getChapterVideo/1]
+2024-09-25 17:13:46 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/users/getUser]
+2024-09-25 17:13:46 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 17:13:46 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 17:16:03 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 17:16:03 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/users/getUser]
+2024-09-25 17:16:03 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 17:16:03 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/chapters/getChapterVideo/1]
+2024-09-25 17:16:03 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 17:16:03 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 17:17:00 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 17:17:00 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 17:17:00 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/chapters/getChapterVideo/1]
+2024-09-25 17:17:00 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/users/getUser]
+2024-09-25 17:17:00 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 17:17:00 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 17:17:16 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 17:17:16 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/users/getUser]
+2024-09-25 17:17:16 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 17:17:16 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/chapters/getChapterVideo/1]
+2024-09-25 17:17:16 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 17:17:16 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 17:19:34 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 17:19:34 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/chapters/getChapterVideo/1]
+2024-09-25 17:19:34 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 17:19:34 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/comments/getComments/]
+2024-09-25 17:19:34 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 17:19:34 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 17:19:34 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 17:19:34 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 17:19:34 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/users/getUser]
+2024-09-25 17:19:34 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/chapters/getChapterVideo/1]
+2024-09-25 17:19:34 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 17:19:34 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/comments/getComments/]
+2024-09-25 17:19:34 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 17:19:34 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 17:19:34 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 17:19:44 WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@7395b007 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-09-25 17:19:49 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 17:19:49 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 17:19:49 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/users/getUser]
+2024-09-25 17:19:49 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/comments/getComments/]
+2024-09-25 17:19:49 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 17:19:49 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/chapters/getChapterVideo/1]
+2024-09-25 17:19:49 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 17:19:49 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 17:19:49 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 17:19:59 WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@20970802 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-09-25 17:20:52 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 17:20:52 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/comments/getComments]
+2024-09-25 17:20:52 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 17:20:52 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/users/getUser]
+2024-09-25 17:20:52 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 17:20:52 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/chapters/getChapterVideo/1]
+2024-09-25 17:20:52 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 17:20:52 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 17:20:52 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 17:20:57 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 17:20:57 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/users/getUser]
+2024-09-25 17:20:57 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 17:20:57 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/chapters/getChapterVideo/1]
+2024-09-25 17:20:57 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 17:20:57 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/comments/getComments]
+2024-09-25 17:20:57 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 17:20:57 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 17:20:57 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 17:21:02 WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@24a03719 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-09-25 17:21:07 WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@1fee10cb (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-09-25 17:21:29 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 17:21:29 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/comments/getComments]
+2024-09-25 17:21:29 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 17:21:29 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/users/getUser]
+2024-09-25 17:21:29 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 17:21:29 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/chapters/getChapterVideo/1]
+2024-09-25 17:21:29 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 17:21:29 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 17:21:29 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 17:21:37 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 17:21:37 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/courses]
+2024-09-25 17:21:37 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 17:21:39 WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@19fc95a8 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-09-25 17:21:49 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 17:21:49 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/comments/getComments]
+2024-09-25 17:21:49 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 17:21:49 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/chapters/getChapterVideo/1]
+2024-09-25 17:21:49 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 17:21:49 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 17:21:57 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 17:21:57 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 17:21:57 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/comments/getComments]
+2024-09-25 17:21:57 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/users/getUser]
+2024-09-25 17:21:57 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 17:21:57 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/chapters/getChapterVideo/1]
+2024-09-25 17:21:57 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 17:21:57 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 17:21:57 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 17:22:07 WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@73fcd626 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-09-25 17:22:30 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 17:22:30 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 17:22:30 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 17:22:30 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/chapters/getChapterVideo/1]
+2024-09-25 17:22:30 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/comments/getComments]
+2024-09-25 17:22:30 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/users/getUser]
+2024-09-25 17:22:30 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 17:22:30 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 17:22:30 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 17:22:40 WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@af153c4 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-09-25 17:22:50 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 17:22:50 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/users/getUser]
+2024-09-25 17:22:50 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 17:22:50 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/comments/getComments]
+2024-09-25 17:22:50 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 17:22:50 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/chapters/getChapterVideo/1]
+2024-09-25 17:22:50 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 17:22:50 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 17:22:50 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 17:22:55 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 17:22:55 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/courses]
+2024-09-25 17:22:55 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 17:22:57 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 17:22:57 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/chapters/getChapterVideo/1]
+2024-09-25 17:22:57 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 17:22:58 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 17:22:58 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/comments/getComments]
+2024-09-25 17:22:58 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 17:23:00 WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@32a7df27 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-09-25 17:23:38 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 17:23:38 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/courses]
+2024-09-25 17:23:38 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 17:23:39 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 17:23:39 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/chapters/getChapterVideo/1]
+2024-09-25 17:23:39 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 17:23:39 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/comments/getComments]
+2024-09-25 17:23:39 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 17:23:39 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 17:24:00 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 17:24:00 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/courses]
+2024-09-25 17:24:00 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 17:24:01 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 17:24:01 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/courses]
+2024-09-25 17:24:01 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 17:24:03 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 17:24:03 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/comments/getComments]
+2024-09-25 17:24:03 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 17:24:03 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/chapters/getChapterVideo/1]
+2024-09-25 17:24:03 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 17:24:03 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 17:25:33 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 17:25:33 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/comments/getComments]
+2024-09-25 17:25:33 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 17:25:33 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 17:25:33 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/users/getUser]
+2024-09-25 17:25:33 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/chapters/getChapterVideo/1]
+2024-09-25 17:25:33 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 17:25:33 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 17:25:33 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 17:27:24 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 17:27:24 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 17:27:24 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/users/getUser]
+2024-09-25 17:27:24 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 17:27:24 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/chapters/getChapterVideo/1]
+2024-09-25 17:27:24 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/comments/getComments]
+2024-09-25 17:27:24 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 17:27:24 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 17:27:24 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 17:27:48 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 17:27:48 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 17:27:48 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/users/getUser]
+2024-09-25 17:27:48 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/chapters/getChapterVideo/1]
+2024-09-25 17:27:48 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 17:27:48 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/comments/getComments]
+2024-09-25 17:27:48 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 17:27:48 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 17:27:48 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 17:30:44 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 17:30:44 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 17:30:44 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/chapters/getChapterVideo/1]
+2024-09-25 17:30:44 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/users/getUser]
+2024-09-25 17:30:44 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 17:30:44 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/comments/getComments]
+2024-09-25 17:30:44 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 17:30:44 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 17:30:44 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 17:32:26 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 17:32:26 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 17:32:26 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/chapters/getChapterVideo/1]
+2024-09-25 17:32:26 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/comments/getComments]
+2024-09-25 17:32:26 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 17:32:26 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/users/getUser]
+2024-09-25 17:32:26 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 17:32:26 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 17:32:26 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 17:32:28 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 17:32:28 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/courses]
+2024-09-25 17:32:28 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 17:32:29 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 17:32:29 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/chapters/getChapterVideo/1]
+2024-09-25 17:32:29 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 17:32:29 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/comments/getComments]
+2024-09-25 17:32:29 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 17:32:29 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 17:32:45 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 17:32:45 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 17:32:45 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/comments/getComments]
+2024-09-25 17:32:45 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/comments/addComment/0]
+2024-09-25 17:32:46 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 17:32:46 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 17:32:49 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 17:32:49 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 17:32:49 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/comments/getComments]
+2024-09-25 17:32:49 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/chapters/getChapterVideo/1]
+2024-09-25 17:32:49 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 17:32:49 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/users/getUser]
+2024-09-25 17:32:49 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 17:32:49 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 17:32:49 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 17:35:19 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 17:35:19 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/comments/getComments]
+2024-09-25 17:35:19 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 17:35:19 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/users/getUser]
+2024-09-25 17:35:19 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 17:35:19 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/chapters/getChapterVideo/1]
+2024-09-25 17:35:19 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 17:35:19 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 17:35:19 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 17:40:19 INFO  i.l.core.protocol.ConnectionWatchdog - Reconnecting, last destination was /47.98.224.148:6379
+2024-09-25 17:40:19 INFO  i.l.c.protocol.ReconnectionHandler - Reconnected to 47.98.224.148:6379
+2024-09-25 17:43:40 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 17:43:40 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 17:43:40 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 17:43:40 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/users/getUser]
+2024-09-25 17:43:40 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/chapters/getChapterVideo/1]
+2024-09-25 17:43:40 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/comments/getComments]
+2024-09-25 17:43:40 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 17:43:40 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 17:43:40 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 17:43:44 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 17:43:44 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 17:43:44 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/users/getUser]
+2024-09-25 17:43:44 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/chapters/getChapterVideo/1]
+2024-09-25 17:43:44 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 17:43:44 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/comments/getComments]
+2024-09-25 17:43:44 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 17:43:44 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 17:43:44 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 17:43:47 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 17:43:47 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/courses]
+2024-09-25 17:43:47 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 17:43:50 WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@2b54c9cb (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-09-25 17:43:50 WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@2198cb6 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-09-25 17:43:50 WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@275b2d49 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-09-25 17:43:54 WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@f748a24 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-09-25 17:43:54 WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@7e848eef (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-09-25 17:43:54 WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@5778f8cb (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-09-25 17:43:57 WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@57641885 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-09-25 17:44:00 WARN  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@9085616 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2024-09-25 17:44:12 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 17:44:12 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 17:44:12 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/courses]
+2024-09-25 17:44:12 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/users/getUser]
+2024-09-25 17:44:12 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 17:44:12 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 17:44:15 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 17:44:15 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 17:44:15 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/comments/getComments]
+2024-09-25 17:44:15 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/chapters/getChapterVideo/1]
+2024-09-25 17:44:15 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 17:44:15 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 17:44:23 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 17:44:23 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/comments/addComment/0]
+2024-09-25 17:44:23 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 17:44:23 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 17:44:23 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/comments/getComments]
+2024-09-25 17:44:23 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 17:46:33 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 17:46:33 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/comments/getComments]
+2024-09-25 17:46:33 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 17:46:33 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/users/getUser]
+2024-09-25 17:46:33 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 17:46:33 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/chapters/getChapterVideo/1]
+2024-09-25 17:46:33 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 17:46:33 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 17:46:33 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 17:47:14 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-09-25 17:47:14 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-09-25 17:47:19 INFO  c.x.OnlineEducationPlatformWebApplication - Starting OnlineEducationPlatformWebApplication using Java 1.8.0_391 on LAPTOP-1KP0AUAC with PID 24004 (D:\code\online-education-platform\online-education-platform-web\target\classes started by 19845 in D:\code\online-education-platform)
+2024-09-25 17:47:19 INFO  c.x.OnlineEducationPlatformWebApplication - No active profile set, falling back to 1 default profile: "default"
+2024-09-25 17:47:20 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-09-25 17:47:20 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-09-25 17:47:20 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2024-09-25 17:47:20 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2024-09-25 17:47:20 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-09-25 17:47:20 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.65]
+2024-09-25 17:47:21 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-09-25 17:47:21 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1443 ms
+2024-09-25 17:47:22 INFO  com.xian.config.WebMvcConfiguration - 生成接口文档
+2024-09-25 17:47:22 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2024-09-25 17:47:22 INFO  c.x.scheduler.UserRegisterConsumer - 开始处理用户注册消息 每 1 秒执行一次
+2024-09-25 17:47:22 INFO  c.x.OnlineEducationPlatformWebApplication - Started OnlineEducationPlatformWebApplication in 2.939 seconds (JVM running for 6.513)
+2024-09-25 17:47:43 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-25 17:47:43 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-09-25 17:47:43 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2024-09-25 17:47:43 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 17:47:43 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/comments/addComment/0]
+2024-09-25 17:47:44 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 17:47:44 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-09-25 17:47:45 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-09-25 17:47:45 INFO  com.xian.interceptor.JwtInterceptor - JwtInterceptor拦截器运行
+2024-09-25 17:47:45 INFO  com.xian.interceptor.JwtInterceptor - 拦截URL:[/online/comments/getComments]
+2024-09-25 17:47:45 INFO  com.xian.interceptor.JwtInterceptor - redis中用户信息为：{userType=teacher, userId=4, username=lz}
+2024-09-25 17:50:02 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-09-25 17:50:03 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

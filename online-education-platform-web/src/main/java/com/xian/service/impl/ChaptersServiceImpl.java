@@ -1,11 +1,14 @@
 package com.xian.service.impl;
 
 import com.xian.mapper.ChapterVideosMapper;
+import com.xian.mapper.CoursesMapper;
 import com.xian.model.ChapterVideos;
 import com.xian.model.Chapters;
 import com.xian.mapper.ChaptersMapper;
+import com.xian.model.Courses;
 import com.xian.model.dto.ChaptersDTO;
 import com.xian.model.vo.ChapterVo;
+import com.xian.model.vo.CourseChapterVo;
 import com.xian.model.vo.VideosVo;
 import com.xian.service.IChaptersService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
@@ -35,6 +38,8 @@ import java.util.UUID;
 @Service
 @Slf4j
 public class ChaptersServiceImpl  implements IChaptersService {
+    @Autowired
+    private CoursesMapper coursesMapper;
 
     @Autowired
     private ChaptersMapper chaptersMapper;
@@ -51,13 +56,16 @@ public class ChaptersServiceImpl  implements IChaptersService {
 
     @Override
     @Transactional
-    public List<ChapterVo> getChapters(String courseId) {
+    public CourseChapterVo getChapters(String courseId) {
 
         List<Chapters> chaptersList=chaptersMapper.getChapters(courseId);
         if (chaptersList.isEmpty()){
             throw new RuntimeException("该课程没有章节");
         }
-        List<ChapterVo> chapterVoList= new ArrayList<>();
+
+        CourseChapterVo chapterVoList=new CourseChapterVo();
+
+        List<ChapterVo> ChapterVoList=new ArrayList<>();
         for (Chapters chapters : chaptersList){
             ChapterVo chapterVo = new ChapterVo();
             BeanUtils.copyProperties(chapters,chapterVo);
@@ -65,12 +73,16 @@ public class ChaptersServiceImpl  implements IChaptersService {
             ChapterVideos chapterVideo =chapterVideosMapper.getChapterVideoByChapterId(chapters.getChapterId());
             chapterVo.setPlayUrl(chapterVideo.getVideoUrl());
             chapterVo.setVideoId(chapterVideo.getVideoCode());
-            chapterVoList.add(chapterVo);
+            ChapterVoList.add(chapterVo);
         }
+        chapterVoList.setChapterVoList(ChapterVoList);
+        Courses courses= coursesMapper.getById(Long.valueOf(courseId));
+        chapterVoList.setCourses(courses);
         return chapterVoList;
     }
 
     @Override
+    @Transactional
     public void save(ChaptersDTO chaptersDTO, MultipartFile file) {
         if (file.isEmpty()) {
             throw new RuntimeException("File is empty");

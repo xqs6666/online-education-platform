@@ -3,6 +3,8 @@ package com.xian.mapper;
 import com.xian.model.Comments;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
+import java.util.List;
+
 /**
  * <p>
  *  Mapper 接口
@@ -11,6 +13,9 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  * @author 鲜青松
  * @since 2024-07-04
  */
-public interface CommentsMapper extends BaseMapper<Comments> {
+public interface CommentsMapper  {
 
+    List<Comments> getCommentsByCourseId(Integer courseId);
+
+    void insert(Comments comments);
 }

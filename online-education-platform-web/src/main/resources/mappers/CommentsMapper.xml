@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.xian.mapper.CommentsMapper">
+    <insert id="insert">
+        insert into comments(user_id,course_id,content,created_at,parent_id)
+        values(#{userId},#{courseId},#{content},NOW(),#{parentId})
+    </insert>
 
+    <select id="getCommentsByCourseId" resultType="com.xian.model.Comments">
+        select * from comments where course_id = #{courseId}
+    </select>
 </mapper>

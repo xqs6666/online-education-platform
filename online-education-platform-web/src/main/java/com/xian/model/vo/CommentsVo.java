@@ -1,11 +1,12 @@
-package com.xian.model;
+package com.xian.model.vo;
+
+
+import java.io.Serializable;
+import java.time.LocalDateTime;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
-import com.baomidou.mybatisplus.annotation.TableName;
-import java.io.Serializable;
-import java.time.LocalDateTime;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Getter;
@@ -13,7 +14,7 @@ import lombok.Setter;
 
 /**
  * <p>
- * 
+ *
  * </p>
  *
  * @author 鲜青松
@@ -21,9 +22,8 @@ import lombok.Setter;
  */
 @Getter
 @Setter
-@TableName("comments")
-@ApiModel(value = "Comments对象", description = "")
-public class Comments implements Serializable {
+@ApiModel(value = "CommentsVo对象", description = "")
+public class CommentsVo implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
@@ -39,9 +39,11 @@ public class Comments implements Serializable {
     @TableField("user_id")
     private Integer userId;
 
-    @ApiModelProperty("父评论ID")
-    @TableField("parent_id")
-    private Integer parentId;
+    @ApiModelProperty("用户昵称")
+    private String username;
+
+    @ApiModelProperty("用户头像")
+    private String avatar;
 
     @ApiModelProperty("评论内容")
     @TableField("content")

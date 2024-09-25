@@ -1,7 +1,11 @@
 package com.xian.service;
 
 import com.xian.model.Comments;
-import com.baomidou.mybatisplus.extension.service.IService;
+import com.xian.model.dto.CommentDTO;
+import com.xian.model.dto.CommentWithUserDTO;
+import com.xian.model.vo.CommentsVo;
+
+import java.util.List;
 
 /**
  * <p>
@@ -11,6 +15,9 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * @author 鲜青松
  * @since 2024-07-04
  */
-public interface ICommentsService extends IService<Comments> {
+public interface ICommentsService  {
 
+    List<CommentWithUserDTO> getComments(Integer courseId);
+
+    void addComment(Integer parentId,CommentDTO commentDTO);
 }

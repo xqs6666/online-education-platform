@@ -28,4 +28,6 @@ public interface UsersMapper {
     Users queryUserByUsername(String username);
 
     Users queryUserByEmail(String email);
+
+    Users queryUserNameById(Integer id);
 }
