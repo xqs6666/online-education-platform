@@ -39,4 +39,11 @@ public class CommentsController {
         return Result.success();
     }
 
+//    //删除评论
+//    @DeleteMapping("/deleteComment/{commentId}")
+//    public Result deleteComment(@PathVariable Integer commentId){
+//        commentsService.deleteComment(commentId);
+//        return Result.success();
+//    }
+
 }

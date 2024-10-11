@@ -2,11 +2,13 @@ package com.xian.service.impl;
 
 import com.xian.cotext.UserContext;
 import com.xian.mapper.CategoryMapper;
+import com.xian.mapper.StudentCoursesMapper;
 import com.xian.mapper.UsersMapper;
 import com.xian.model.Category;
 import com.xian.model.Courses;
 import com.xian.mapper.CoursesMapper;
 import com.xian.model.Users;
+import com.xian.model.dto.StudentCourseDTO;
 import com.xian.model.vo.CourseVo;
 import com.xian.service.ICoursesService;
 import lombok.extern.slf4j.Slf4j;
@@ -14,6 +16,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 
@@ -34,8 +37,8 @@ public class CoursesServiceImpl  implements ICoursesService{
     private UsersMapper usersMapper;
     @Autowired
     private CategoryMapper categoryMapper;
-
-
+    @Autowired
+    private StudentCoursesMapper studentCoursesMapper;
 
     public List<CourseVo> list() {
         ArrayList<CourseVo> list = new ArrayList<>();
@@ -104,5 +107,23 @@ public class CoursesServiceImpl  implements ICoursesService{
 
     public void removeById(Long courseId) {
         coursesMapper.removeById(courseId);
+    }
+
+    @Override
+    public List<Category> getAllCategory() {
+        return categoryMapper.list();
+    }
+
+    //获取热门课程
+    @Override
+    public List<Courses> getHotCourses() {
+        //获取热门课程
+        List<Integer> hotCourseId=studentCoursesMapper.getHotCourses();
+        List<Courses> coursesList = new ArrayList<>();
+        for (Integer courseId : hotCourseId){
+            Courses courses = coursesMapper.getById(Long.valueOf(courseId));
+            coursesList.add(courses);
+        }
+        return coursesList;
     }
 }

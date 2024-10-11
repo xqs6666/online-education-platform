@@ -80,11 +80,12 @@ public class SftpService {
     public void deleteFile(String filePath) throws Exception {
         ChannelSftp channelSftp = null;
         Session session = null;
+        String remoteFilePath = sftpDirectory + filePath;
 
         try {
             channelSftp = setupSftpConnection();
             session = channelSftp.getSession();
-            channelSftp.rm(filePath);
+            channelSftp.rm(remoteFilePath);
         } finally {
             closeSftpConnection(channelSftp, session);
         }

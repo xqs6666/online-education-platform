@@ -43,7 +43,7 @@ public class WebMvcConfiguration extends WebMvcConfigurationSupport {
         registry.addInterceptor(jwtInterceptor)
                 .addPathPatterns("/online/**") // 需要拦截的路径
                 .excludePathPatterns("/online/users/login") // 排除登录路径
-                .excludePathPatterns("/online/users/register"); // 排除注册路径
+                .excludePathPatterns("/online/users/register","/online/images/upload"); // 排除注册路径
 
     }
 

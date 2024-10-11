@@ -64,7 +64,7 @@ public class VideoController {
     public Result deleteVideo(@PathVariable String id) {
         try {
             // 定义要删除的远程文件路径
-            String remoteFilePath = id + ".mp4";  // 视频文件是 .mp4 后缀
+            String remoteFilePath =id + ".mp4";  // 视频文件是 .mp4 后缀
 
             // 使用 SftpService 删除文件
             sftpService.deleteFile(remoteFilePath);

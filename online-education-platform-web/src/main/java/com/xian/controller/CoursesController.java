@@ -1,5 +1,6 @@
 package com.xian.controller;
 
+import com.xian.model.Category;
 import com.xian.model.Courses;
 import com.xian.model.vo.CourseVo;
 import com.xian.service.ICoursesService;
@@ -63,5 +64,13 @@ public class CoursesController {
     public Result deleteCourse(@PathVariable Long courseId) {
         courseService.removeById(courseId);
         return Result.success();
+    }
+
+    //获取所有课程分类
+    @GetMapping("/getAllCategory")
+    @ApiOperation(value = "获取所有课程分类")
+    public Result getAllCategory(){
+        List<Category> list =courseService.getAllCategory();
+        return Result.success(list);
     }
 }
