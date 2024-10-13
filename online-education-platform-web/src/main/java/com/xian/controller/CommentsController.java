@@ -3,6 +3,7 @@ package com.xian.controller;
 import com.xian.model.Comments;
 import com.xian.model.dto.CommentDTO;
 import com.xian.model.dto.CommentWithUserDTO;
+import com.xian.model.vo.CommentsDataVo;
 import com.xian.model.vo.CommentsVo;
 import com.xian.service.ICommentsService;
 import com.xian.util.Result;
@@ -37,6 +38,13 @@ public class CommentsController {
     public Result addComment(@PathVariable(required = false) Integer parentId,@RequestBody CommentDTO commentDTO){
         commentsService.addComment(parentId,commentDTO);
         return Result.success();
+    }
+
+    //获取评论列表
+    @GetMapping("/getCommentsList")
+    public Result<List<CommentsDataVo>> getCommentsList(){
+        List<CommentsDataVo> commentsList=commentsService.getCommentsList();
+        return Result.success(commentsList);
     }
 
 //    //删除评论

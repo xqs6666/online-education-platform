@@ -1,10 +1,10 @@
 package com.xian.controller;
 
 import com.xian.model.Users;
+import com.xian.model.vo.LoginVo;
+import com.xian.model.vo.RegisterVo;
 import com.xian.service.IUsersService;
 import com.xian.util.Result;
-import com.xian.vo.LoginVo;
-import com.xian.vo.RegisterVo;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;

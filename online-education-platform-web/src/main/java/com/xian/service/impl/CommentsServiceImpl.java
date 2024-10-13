@@ -1,12 +1,15 @@
 package com.xian.service.impl;
 
 import com.xian.cotext.UserContext;
+import com.xian.mapper.CoursesMapper;
 import com.xian.mapper.UsersMapper;
 import com.xian.model.Comments;
 import com.xian.mapper.CommentsMapper;
+import com.xian.model.Courses;
 import com.xian.model.Users;
 import com.xian.model.dto.CommentDTO;
 import com.xian.model.dto.CommentWithUserDTO;
+import com.xian.model.vo.CommentsDataVo;
 import com.xian.model.vo.CommentsVo;
 import com.xian.service.ICommentsService;
 import org.springframework.beans.BeanUtils;
@@ -14,6 +17,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 
@@ -33,6 +37,9 @@ public class CommentsServiceImpl  implements ICommentsService {
 
     @Autowired
     private UsersMapper usersMapper;
+
+    @Autowired
+    private CoursesMapper coursesMapper;
 
     /**
      * 根据课程ID获取所有评论，并将其转换为CommentWithUserDTO列表
@@ -150,6 +157,23 @@ public class CommentsServiceImpl  implements ICommentsService {
 
         // 插入评论
         commentsMapper.insert(comments);
+    }
+
+    @Override
+    public List<CommentsDataVo> getCommentsList() {
+        List<CommentsDataVo> commentsDataVoList=new ArrayList<>();
+        List<Comments> commentsList=commentsMapper.list();
+        for (Comments comments : commentsList){
+            CommentsDataVo commentsVo = new CommentsDataVo();
+            BeanUtils.copyProperties(comments,commentsVo);
+            Users users = usersMapper.getById(comments.getUserId());
+            commentsVo.setUsername(users.getUsername());
+            commentsVo.setAvatar(users.getAvatar());
+            Courses courses = coursesMapper.getById(Long.valueOf(comments.getCourseId()));
+            commentsVo.setCourseName(courses.getTitle());
+            commentsDataVoList.add(commentsVo);
+        }
+        return commentsDataVoList;
     }
 
 }

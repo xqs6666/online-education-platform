@@ -42,15 +42,14 @@
             <version>1.18.20</version>
         </dependency>
         <!--Swagger-->
-        <dependency>
-            <groupId>com.github.xiaoymin</groupId>
-            <artifactId>knife4j-spring-boot-starter</artifactId>
-            <version>3.0.2</version>
-        </dependency>
+
+
         <!--        它是处理 Java 8 日期时间类的必要模块。-->
         <dependency>
             <groupId>com.fasterxml.jackson.datatype</groupId>
             <artifactId>jackson-datatype-jsr310</artifactId>
         </dependency>
+
+
     </dependencies>
 </project>

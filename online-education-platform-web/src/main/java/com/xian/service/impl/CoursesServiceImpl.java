@@ -9,9 +9,11 @@ import com.xian.model.Courses;
 import com.xian.mapper.CoursesMapper;
 import com.xian.model.Users;
 import com.xian.model.dto.StudentCourseDTO;
+import com.xian.model.vo.CourseAdminVo;
 import com.xian.model.vo.CourseVo;
 import com.xian.service.ICoursesService;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -125,5 +127,38 @@ public class CoursesServiceImpl  implements ICoursesService{
             coursesList.add(courses);
         }
         return coursesList;
+    }
+
+    @Override
+    public List<CourseAdminVo> adminList() {
+        ArrayList<CourseAdminVo> list = new ArrayList<>();
+
+        //先获取所有分类
+        List<Category> categoryCourses = categoryMapper.list();
+
+        if (categoryCourses != null){
+            for (Category category : categoryCourses) {
+                //获取分类名称
+                String categoryName = category.getCategoryName();
+                //
+                Integer categoryId = category.getCategoryId();
+                //获取分类id
+                List<Courses> courses=coursesMapper.getByCategoryId(categoryId);
+
+                for (Courses course : courses){
+                    CourseAdminVo courseVo = new CourseAdminVo();
+                    BeanUtils.copyProperties(course,courseVo);
+                    courseVo.setCategoryId(category.getCategoryId());
+                    courseVo.setCategoryName(categoryName);
+                    Users user = usersMapper.getById(course.getTeacherId());
+                    courseVo.setUsername(user.getUsername());
+                    courseVo.setTeacherAvatar(user.getAvatar());
+                    list.add(courseVo);
+                }
+
+            }
+        }
+
+        return list;
     }
 }

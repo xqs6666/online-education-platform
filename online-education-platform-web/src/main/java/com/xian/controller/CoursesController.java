@@ -2,6 +2,7 @@ package com.xian.controller;
 
 import com.xian.model.Category;
 import com.xian.model.Courses;
+import com.xian.model.vo.CourseAdminVo;
 import com.xian.model.vo.CourseVo;
 import com.xian.service.ICoursesService;
 import com.xian.util.Result;
@@ -33,6 +34,14 @@ public class CoursesController {
     public Result<List<CourseVo>> getAllCourses() {
         return Result.success(courseService.list());
     }
+
+    //获取所有课程admin
+    @GetMapping("/courseAdmin")
+    @ApiOperation(value = "获取所有课程Admin")
+    public Result<List<CourseAdminVo>> getAllCoursesAdmin() {
+        return Result.success(courseService.adminList());
+    }
+
 
     // 获取单个课程
     @GetMapping("/{courseId}")

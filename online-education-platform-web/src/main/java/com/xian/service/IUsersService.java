@@ -1,8 +1,8 @@
 package com.xian.service;
 
 import com.xian.model.Users;
-import com.xian.vo.LoginVo;
-import com.xian.vo.RegisterVo;
+import com.xian.model.vo.LoginVo;
+import com.xian.model.vo.RegisterVo;
 
 import java.util.List;
 

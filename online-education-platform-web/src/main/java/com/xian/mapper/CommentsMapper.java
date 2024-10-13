@@ -18,4 +18,7 @@ public interface CommentsMapper  {
     List<Comments> getCommentsByCourseId(Integer courseId);
 
     void insert(Comments comments);
+
+    List<Comments> list();
+
 }

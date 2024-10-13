@@ -3,6 +3,7 @@ package com.xian.service;
 import com.xian.model.Category;
 import com.xian.model.Courses;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.xian.model.vo.CourseAdminVo;
 import com.xian.model.vo.CourseVo;
 
 import java.util.List;
@@ -30,4 +31,7 @@ public interface ICoursesService  {
     List<Category> getAllCategory();
 
     List<Courses> getHotCourses();
+
+    List<CourseAdminVo> adminList();
+
 }

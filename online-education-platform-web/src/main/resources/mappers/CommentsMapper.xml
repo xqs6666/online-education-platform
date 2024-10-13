@@ -9,4 +9,7 @@
     <select id="getCommentsByCourseId" resultType="com.xian.model.Comments">
         select * from comments where course_id = #{courseId}
     </select>
+    <select id="list" resultType="com.xian.model.Comments">
+        select * from comments
+    </select>
 </mapper>

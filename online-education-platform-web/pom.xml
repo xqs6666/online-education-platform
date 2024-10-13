@@ -19,6 +19,11 @@
 
     <dependencies>
         <dependency>
+            <groupId>com.github.xiaoymin</groupId>
+            <artifactId>knife4j-spring-boot-starter</artifactId>
+            <version>3.0.2</version>
+        </dependency>
+        <dependency>
             <groupId>com.xian</groupId>
             <artifactId>online-education-platform-common</artifactId>
             <version>1.0-SNAPSHOT</version>
@@ -54,6 +59,11 @@
             <artifactId>jsch</artifactId>
             <version>0.1.55</version> <!-- 你可以根据需要选择版本 -->
         </dependency>
+
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-actuator</artifactId>
+            </dependency>
 
     </dependencies>
 
