@@ -40,4 +40,11 @@ public class ChaptersDTO implements Serializable {
     @TableField("description")
     private String description;
 
+    @ApiModelProperty("排序")
+    @TableField("sort_order")
+    private Integer sortOrder;
+
+    @ApiModelProperty("播放地址")
+    private String playUrl;
+
 }

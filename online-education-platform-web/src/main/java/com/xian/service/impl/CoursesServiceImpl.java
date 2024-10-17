@@ -8,7 +8,6 @@ import com.xian.model.Category;
 import com.xian.model.Courses;
 import com.xian.mapper.CoursesMapper;
 import com.xian.model.Users;
-import com.xian.model.dto.StudentCourseDTO;
 import com.xian.model.vo.CourseAdminVo;
 import com.xian.model.vo.CourseVo;
 import com.xian.service.ICoursesService;
@@ -18,7 +17,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 
@@ -108,6 +106,12 @@ public class CoursesServiceImpl  implements ICoursesService{
 
 
     public void removeById(Long courseId) {
+        //删除课程
+        //删除学生课程关联表
+        //删除课程章节表
+            //删除章节视频表
+        //删除课程评论表
+        //删除课程作业表assignments.sql
         coursesMapper.removeById(courseId);
     }
 
@@ -159,6 +163,25 @@ public class CoursesServiceImpl  implements ICoursesService{
             }
         }
 
+        return list;
+    }
+
+    @Override
+    public List<CourseAdminVo> teacherList() {
+        List<CourseAdminVo> list = new ArrayList<>();
+        Map<String, Object> user = UserContext.getUser();
+        Integer userId = (Integer) user.get("userId");
+        List<Courses> userCourse=coursesMapper.getByUserId(userId);
+        for (Courses course : userCourse){
+            CourseAdminVo courseVo = new CourseAdminVo();
+            BeanUtils.copyProperties(course,courseVo);
+            Users user1 = usersMapper.getById(course.getTeacherId());
+            courseVo.setUsername(user1.getUsername());
+            courseVo.setTeacherAvatar(user1.getAvatar());
+            Category category =categoryMapper.getByCategoryId(course.getCategoryId());
+            courseVo.setCategoryName(category.getCategoryName());
+            list.add(courseVo);
+        }
         return list;
     }
 }

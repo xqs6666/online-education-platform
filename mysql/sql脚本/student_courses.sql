@@ -18,3 +18,8 @@ create index idx_student_courses_course_id
 create index idx_student_courses_student_id
     on student_courses (student_id);
 
+INSERT INTO online_education_platform.student_courses (registration_id, student_id, course_id, registered_at, progress) VALUES (1, 1, 1, '2024-10-09 12:21:17', 0);
+INSERT INTO online_education_platform.student_courses (registration_id, student_id, course_id, registered_at, progress) VALUES (3, 1, 2, '2024-10-09 12:35:16', 0);
+INSERT INTO online_education_platform.student_courses (registration_id, student_id, course_id, registered_at, progress) VALUES (4, 1, 3, '2024-10-09 12:35:35', 0);
+INSERT INTO online_education_platform.student_courses (registration_id, student_id, course_id, registered_at, progress) VALUES (5, 2, 1, '2024-10-09 12:37:24', 0);
+INSERT INTO online_education_platform.student_courses (registration_id, student_id, course_id, registered_at, progress) VALUES (6, 2, 2, '2024-10-09 12:53:28', 0);

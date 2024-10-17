@@ -27,4 +27,6 @@ public interface CoursesMapper  {
     void removeById(Long courseId);
 
     List<Courses> getByCategoryId(Integer categoryId);
+
+    List<Courses> getByUserId(Integer userId);
 }

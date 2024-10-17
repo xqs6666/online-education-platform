@@ -16,4 +16,8 @@ public interface ChapterVideosMapper  {
     ChapterVideos getChapterVideoByChapterId(Integer chapterId);
 
     void save(ChapterVideos chapterVideos);
+
+    void updateById(ChapterVideos chapterVideos);
+
+    void deleteById(Integer chapterId);
 }

@@ -4,6 +4,21 @@
     <insert id="save">
         insert into chapter_videos(chapter_id,video_url,uploaded_at,video_code) values(#{chapterId},#{videoUrl},now(),#{videoCode})
     </insert>
+    <update id="updateById">
+        update chapter_videos
+        <set>
+            <if test="videoUrl != null">
+                video_url = #{videoUrl},
+            </if>
+            <if test="videoCode != null">
+                video_code = #{videoCode},
+            </if>
+        </set>
+        where chapter_id=#{chapterId}
+    </update>
+    <delete id="deleteById">
+        delete from chapter_videos where chapter_id=#{chapterId}
+    </delete>
 
     <select id="getChapterVideoByChapterId" resultType="com.xian.model.ChapterVideos">
         select * from chapter_videos where chapter_id = #{chapterId}

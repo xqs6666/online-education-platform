@@ -1,6 +1,7 @@
 package com.xian.controller;
 
 import com.xian.model.dto.ChaptersDTO;
+import com.xian.model.dto.UpdateChaptersDTO;
 import com.xian.model.vo.CourseChapterVo;
 import com.xian.service.IChaptersService;
 import com.xian.util.Result;
@@ -32,8 +33,22 @@ public class ChaptersController {
 
     //添加章节
     @PostMapping("/addChapter")
-    public Result addChapter(@ModelAttribute ChaptersDTO chaptersDTO,@RequestParam("file") MultipartFile file){
-        chaptersService.save(chaptersDTO,file);
+    public Result addChapter(@RequestBody ChaptersDTO chaptersDTO){
+        chaptersService.save(chaptersDTO);
+        return Result.success();
+    }
+
+    //修改章节
+    @PutMapping("/updateChapter")
+    public Result updateChapter(@RequestBody UpdateChaptersDTO updateChaptersDTO){
+        chaptersService.updateChapter(updateChaptersDTO);
+        return Result.success();
+    }
+
+    //删除章节
+    @DeleteMapping("/deleteChapter/{chapterId}")
+    public Result deleteChapter(@PathVariable Integer chapterId){
+        chaptersService.removeById(chapterId);
         return Result.success();
     }
 

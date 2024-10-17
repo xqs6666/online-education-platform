@@ -2,6 +2,7 @@ package com.xian.mapper;
 
 import com.xian.model.Chapters;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.xian.model.dto.UpdateChaptersDTO;
 
 import java.util.List;
 
@@ -18,4 +19,9 @@ public interface ChaptersMapper  {
     List<Chapters> getChapters(String courseId);
 
     void save(Chapters chapters);
+
+
+    void updateById(Chapters chapters);
+
+    void removeById(Integer chapterId);
 }

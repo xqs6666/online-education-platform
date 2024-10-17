@@ -1,0 +1,46 @@
+@startuml
+actor User
+participant "注册页面 (register.vue)" as RegisterPage
+participant "API (api.js)" as Api
+participant "用户服务 (users.js)" as UserService
+participant "数据库" as Database
+participant "消息队列" as MessageQueue
+
+User -> RegisterPage : 输入注册信息
+RegisterPage -> RegisterPage : 校验输入信息
+
+alt 输入信息不符合规范
+    RegisterPage -> User : 显示错误提示
+else 输入信息符合规范
+    RegisterPage -> Api : 发送注册请求
+    Api -> UserService : 查询用户名是否已存在
+    UserService -> Database : 查询用户名
+    alt 用户名已存在
+        Database -> UserService : 返回用户名已存在
+        UserService -> Api : 返回注册失败
+        Api -> RegisterPage : 返回用户名已存在
+        RegisterPage -> User : 显示用户名已存在
+    else 用户名未存在
+        Database -> UserService : 返回用户名未存在
+        UserService -> Api : 查询邮箱是否已存在
+        Api -> Database : 查询邮箱
+        alt 邮箱已存在
+            Database -> UserService : 返回邮箱已存在
+            UserService -> Api : 返回注册失败
+            Api -> RegisterPage : 返回邮箱已存在
+            RegisterPage -> User : 显示邮箱已存在
+        else 邮箱未存在
+            Database -> UserService : 返回邮箱未存在
+            UserService -> Api : 保存用户信息
+            Api -> Database : 保存用户信息
+            Database -> UserService : 返回保存成功
+            UserService -> Api : 发送注册成功消息
+            Api -> MessageQueue : 推送用户信息到消息队列
+            MessageQueue -> UserService : 返回成功
+            Api -> RegisterPage : 返回注册成功
+            RegisterPage -> User : 显示注册成功
+        end
+    end
+end
+
+@enduml

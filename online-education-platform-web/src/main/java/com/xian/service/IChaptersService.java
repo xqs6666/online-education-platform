@@ -3,6 +3,7 @@ package com.xian.service;
 import com.xian.model.Chapters;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.xian.model.dto.ChaptersDTO;
+import com.xian.model.dto.UpdateChaptersDTO;
 import com.xian.model.vo.ChapterVo;
 import com.xian.model.vo.CourseChapterVo;
 import org.springframework.web.multipart.MultipartFile;
@@ -21,5 +22,9 @@ public interface IChaptersService  {
 
     CourseChapterVo getChapters(String courseId);
 
-    void save(ChaptersDTO chaptersDTO, MultipartFile file);
+    void save(ChaptersDTO chaptersDTO);
+
+    void updateChapter(UpdateChaptersDTO updateChaptersDTO);
+
+    void removeById(Integer chapterId);
 }

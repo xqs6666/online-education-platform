@@ -1,0 +1,16 @@
+@startuml
+actor User
+participant "登录页面\n(login.vue)" as LoginPage
+participant "API接口\n(api.js)" as Api
+participant "用户服务\n(users.js)" as UserService
+participant "Redis\n(Redis)" as Redis
+
+User -> LoginPage: 点击退出登录
+LoginPage -> Api: 发送退出请求
+Api -> UserService: 转发退出请求
+UserService -> Redis: 删除用户token
+Redis -> UserService: 返回删除结果
+UserService -> Api: 返回退出结果
+Api -> LoginPage: 显示退出成功消息
+LoginPage -> User: 反馈退出成功
+@enduml

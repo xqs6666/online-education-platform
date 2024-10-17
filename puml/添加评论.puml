@@ -1,0 +1,14 @@
+@startuml
+actor User
+participant "评论前端模块" as CommentModule
+participant "数据库" as CommentDB
+participant "用户后端模块" as UserModule
+
+User -> CommentModule: 请求评论列表
+CommentModule -> CommentDB: 获取所有评论
+CommentDB -> CommentModule: 返回评论数据
+CommentModule -> UserModule: 获取用户信息（用户名、头像等）
+UserModule -> CommentModule: 返回用户信息
+CommentModule -> User: 展示评论和回复信息
+@enduml
+

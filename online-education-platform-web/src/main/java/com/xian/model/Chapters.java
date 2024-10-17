@@ -43,6 +43,10 @@ public class Chapters implements Serializable {
     @TableField("description")
     private String description;
 
+    @ApiModelProperty("排序")
+    @TableField("sort_order")
+    private Integer sortOrder;
+
     @ApiModelProperty("创建日期")
     @TableField("created_at")
     private LocalDateTime createdAt;

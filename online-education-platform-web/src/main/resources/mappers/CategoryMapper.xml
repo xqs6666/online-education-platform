@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.xian.mapper.CategoryMapper">
+    <insert id="save">
+        insert into category(category_name) values(#{categoryName});
+    </insert>
 
 
     <select id="list" resultType="com.xian.model.Category">
         select * from category;
+    </select>
+    <select id="getByCategoryId" resultType="com.xian.model.Category">
+        select * from category where category_id = #{categoryId};
     </select>
 </mapper>

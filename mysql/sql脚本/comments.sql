@@ -23,3 +23,5 @@ INSERT INTO online_education_platform.comments (comment_id, user_id, content, cr
 INSERT INTO online_education_platform.comments (comment_id, user_id, content, created_at, course_id, parent_id) VALUES (12, 4, '好看 爱看', '2024-09-25 09:55:40', 1, 0);
 INSERT INTO online_education_platform.comments (comment_id, user_id, content, created_at, course_id, parent_id) VALUES (13, 4, '我不爱看', '2024-09-25 09:55:48', 1, 12);
 INSERT INTO online_education_platform.comments (comment_id, user_id, content, created_at, course_id, parent_id) VALUES (14, 4, '我也不爱看', '2024-09-25 09:55:57', 1, 13);
+INSERT INTO online_education_platform.comments (comment_id, user_id, content, created_at, course_id, parent_id) VALUES (15, 4, '一级', '2024-09-25 10:02:26', 2, 0);
+INSERT INTO online_education_platform.comments (comment_id, user_id, content, created_at, course_id, parent_id) VALUES (16, 4, '二级', '2024-09-25 10:02:53', 2, 15);

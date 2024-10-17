@@ -8,6 +8,10 @@ import com.xian.service.ICoursesService;
 import com.xian.util.Result;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import lombok.extern.slf4j.Slf4j;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -24,7 +28,9 @@ import java.util.List;
 @RestController
 @RequestMapping("/online/courses")
 @Api(tags = "CoursesController")
+
 public class CoursesController {
+    private static final Logger log = LoggerFactory.getLogger(CoursesController.class);
     @Autowired
     private ICoursesService courseService;
 
@@ -40,6 +46,13 @@ public class CoursesController {
     @ApiOperation(value = "获取所有课程Admin")
     public Result<List<CourseAdminVo>> getAllCoursesAdmin() {
         return Result.success(courseService.adminList());
+    }
+
+    // 获取当前老师课程
+    @GetMapping("/courseTeacher")
+    @ApiOperation(value = "获取当前老师课程")
+    public Result<List<CourseAdminVo>> getAllCoursesTeacher() {
+        return Result.success(courseService.teacherList());
     }
 
 
@@ -62,7 +75,11 @@ public class CoursesController {
     @PutMapping("/{courseId}")
     @ApiOperation(value = "更新课程")
     public Result updateCourse(@PathVariable(name = "courseId") Integer courseId, @RequestBody Courses course) {
-        course.setCourseId(courseId);
+
+        Courses courses = new Courses();
+        BeanUtils.copyProperties(course, courses);
+        courses.setCourseId(courseId);
+        System.out.println("更新课程信息："+courses);
         courseService.updateById(course);
         return Result.success();
     }
@@ -82,4 +99,7 @@ public class CoursesController {
         List<Category> list =courseService.getAllCategory();
         return Result.success(list);
     }
+
+
+
 }

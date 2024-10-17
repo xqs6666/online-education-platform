@@ -34,4 +34,5 @@ public interface ICoursesService  {
 
     List<CourseAdminVo> adminList();
 
+    List<CourseAdminVo> teacherList();
 }

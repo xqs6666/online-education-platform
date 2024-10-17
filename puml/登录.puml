@@ -1,0 +1,21 @@
+@startuml
+actor User
+participant "登录页面\n(login.vue)" as LoginPage
+participant "API接口\n(api.js)" as Api
+participant "用户服务\n(users.js)" as UserService
+participant "数据库\n(Database)" as Database
+participant "Redis\n(Redis)" as Redis
+
+User -> LoginPage: 输入用户名和密码
+LoginPage -> LoginPage: 校验输入信息
+LoginPage -> Api: 发送登录请求
+Api -> UserService: 转发登录请求
+UserService -> Database: 查询用户信息
+Database -> UserService: 返回用户信息
+UserService -> UserService: 验证密码
+UserService -> Redis: 生成token并存储用户信息
+Redis -> UserService: 返回存储结果
+UserService -> Api: 返回token
+Api -> LoginPage: 返回登录成功信息
+LoginPage -> User: 显示登录成功消息
+@enduml

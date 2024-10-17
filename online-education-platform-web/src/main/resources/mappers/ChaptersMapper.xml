@@ -3,10 +3,28 @@
 <mapper namespace="com.xian.mapper.ChaptersMapper">
     <insert id="save" useGeneratedKeys="true" keyProperty="chapterId">
 
-        insert into chapters(course_id,title,description,created_at,updated_at) values(#{courseId},#{title},#{description},now(),now())
+        insert into chapters(course_id,title,description,updated_at,sort_order) values(#{courseId},#{title},#{description},now(),#{sortOrder})
     </insert>
+    <update id="updateById">
+        update chapters
+        <set>
+            <if test="title != null and title != ''">
+                title = #{title},
+            </if>
+            <if test="description != null and description != ''">
+                description = #{description},
+            </if>
+            <if test="sortOrder != null">
+                sort_order = #{sortOrder},
+            </if>
+        </set>
+        where chapter_id = #{chapterId}
+    </update>
+    <delete id="removeById">
+        delete from chapters where chapter_id = #{chapterId}
+    </delete>
 
     <select id="getChapters" resultType="com.xian.model.Chapters">
-        select * from chapters where course_id = #{courseId}
+        select * from chapters where course_id = #{courseId} order by sort_order
     </select>
 </mapper>

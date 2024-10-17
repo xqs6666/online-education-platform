@@ -1,0 +1,25 @@
+@startuml
+actor 用户
+participant "课程展示页面" as Page
+participant "课程 API" as CourseAPI
+participant "热门课程 API" as HotCourseAPI
+participant "分类 API" as CategoryAPI
+
+== 页面加载 ==
+用户 -> Page: 访问课程展示页面
+Page -> CategoryAPI: 获取所有分类
+Page -> HotCourseAPI: 获取热门课程
+Page -> CourseAPI: 获取所有课程
+Page -> 用户: 展示课程分类、热门课程和课程列表
+
+== 搜索课程 ==
+用户 -> Page: 输入课程名称并点击搜索
+Page -> CourseAPI: 根据搜索名称过滤课程
+Page -> 用户: 显示过滤后的课程列表
+
+== 点击分类 ==
+用户 -> Page: 点击课程分类
+Page -> CourseAPI: 根据选择的分类过滤课程
+Page -> 用户: 显示该分类下的课程列表
+
+@enduml
