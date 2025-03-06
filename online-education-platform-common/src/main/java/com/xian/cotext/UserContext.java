@@ -11,6 +11,7 @@ public class UserContext {
         userContext.set(user);
     }
 
+    // 获取用户信息
     public static Map<String, Object> getUser() {
         return userContext.get();
     }
