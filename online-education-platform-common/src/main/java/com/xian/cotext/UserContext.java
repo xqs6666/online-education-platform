@@ -16,6 +16,7 @@ public class UserContext {
         return userContext.get();
     }
 
+    // 清除用户信息
     public static void clear() {
         userContext.remove();
     }
