@@ -11,7 +11,7 @@ public class UserContext {
         userContext.set(user);
     }
 
-    // 获取用户信息
+    // 获取用户信息 从 Thread as a Map
     public static Map<String, Object> getUser() {
         return userContext.get();
     }
